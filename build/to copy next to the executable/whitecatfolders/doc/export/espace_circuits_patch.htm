@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" dir="ltr" lang="fr"><head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>espace_circuits_patch [White Cat lighting board]</title>
+  
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2012-07-08T09:25:25+0200" />
+<meta name="keywords" content="espace_circuits_patch" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/opensearch.php" title="White Cat lighting board" />
+<link rel="start" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/" />
+<link rel="contents" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=espace_circuits_patch&amp;do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?do=export_xhtml&amp;id=espace_circuits_patch" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?do=export_raw&amp;id=espace_circuits_patch" />
+<link rel="stylesheet" media="all" type="text/css" href="espace_circuits_patch_fichiers/css.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="espace_circuits_patch_fichiers/css_002.css" />
+<link rel="stylesheet" media="print" type="text/css" href="espace_circuits_patch_fichiers/css_003.css" />
+<script type="text/javascript" charset="utf-8" src="espace_circuits_patch_fichiers/js.php"></script>
+
+  <link rel="shortcut icon" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/tpl/default/images/favicon.ico" /></head>
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=espace_circuits_patch&amp;do=backlink" title="Liens vers cette page">espace_circuits_patch</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php" name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">White Cat lighting board</a>      </div>
+
+      <div class="clearer">
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_source" method="post" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="edit" type="hidden" /><input name="rev" value="" type="hidden" /><input name="id" value="espace_circuits_patch" type="hidden" /><input value="Afficher le texte source" class="button" accesskey="v" title="Afficher le texte source [V]" type="submit" /></div></form>        <form class="button btn_revs" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="revisions" type="hidden" /><input name="id" value="espace_circuits_patch" type="hidden" /><input value="Anciennes révisions" class="button" accesskey="o" title="Anciennes révisions [O]" type="submit" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="recent" type="hidden" /><input name="id" value="espace_circuits_patch" type="hidden" /><input value="Derniers changements" class="button" accesskey="r" title="Derniers changements [R]" type="submit" /></div></form>        <form action="/whitecat/dokuwiki/doku.php" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input name="do" value="search" type="hidden" /><input id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" type="text" /><input value="Rechercher" class="button" title="Rechercher" type="submit" /><div style="display: none;" id="qsearch__out" class="ajax_qsearch JSpopup"></div>&nbsp;
+      </div>
+
+      <div class="clearer">
+    </div>
+
+        <div class="breadcrumbs">
+      <span class="bchead">Piste:</span> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=hardware" class="breadcrumbs" title="hardware">hardware</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=installer_whitecat" class="breadcrumbs" title="installer_whitecat">installer_whitecat</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=register" class="breadcrumbs" title="register">register</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=interface" class="breadcrumbs" title="interface">interface</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=grandmaster_et_buffers" class="breadcrumbs" title="grandmaster_et_buffers">grandmaster_et_buffers</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=presentation_espace_circuits" class="breadcrumbs" title="presentation_espace_circuits">presentation_espace_circuits</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=espace_circuits" class="breadcrumbs" title="espace_circuits">espace_circuits</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=espace_circuits_channel_views" class="breadcrumbs" title="espace_circuits_channel_views">espace_circuits_channel_views</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=introduction" class="breadcrumbs" title="introduction">introduction</a> <span class="bcsep">»</span> <span class="curid"><a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=espace_circuits_patch" class="breadcrumbs" title="espace_circuits_patch">espace_circuits_patch</a></span>          </div>
+    
+    
+  </form></div>
+  
+  
+
+
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span style="cursor: pointer;" class="toc_close" id="toc__toggle"><span>−</span></span>Table des matières</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#le_patch" class="toc">Le Patch</a></span></div>
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#utilite_du_patch" class="toc">Utilité du Patch</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#convention_d_affichage" class="toc">Convention d'affichage</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#retour_d_infos" class="toc">Retour d'infos</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#affectation_d_un_ou_plusieurs_gradateurs_a_un_circuit" class="toc">Affectation d'un ou plusieurs gradateurs à un circuit</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#selection_de_gradateurs_dimmers" class="toc">Sélection de gradateurs (dimmers)</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#affectation_d_un_circuit_a_un_gradateur" class="toc">Affectation d'un circuit à un gradateur</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desaffectation" class="toc">Désaffectation</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#patcher_droit" class="toc">Patcher droit</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#check_channel" class="toc">Check Channel</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#patcher_avec_les_gradas_affiches_sous_les_circuits" class="toc">Patcher avec les gradas affichés sous les circuits</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#patcher_depuis_le_plan_lumiere" class="toc">Patcher depuis le plan lumière</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#affecter_une_courbe_curves" class="toc">Affecter une courbe (Curves)</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#fonctionnement_de_l_edition_de_courbes" class="toc">Fonctionnement de l'édition de courbes:</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#creation_d_une_courbe" class="toc">Création d'une courbe:</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#affectation_d_une_courbe_a_un_gradateur" class="toc">Affectation d'une courbe à un gradateur:</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#charger_un_preset_de_courbe_dans_une_des_16_courbes_personnelles" class="toc">Charger un preset de courbe dans une des 16 courbes personnelles</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#remettre_en_lineaire_toutes_les_courbes_de_son_patch_sans_toucher_a_l_affectation_des_gradateurs" class="toc">Remettre en linéaire toutes les courbes de son patch sans toucher à l'affectation des gradateurs</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tester_sa_courbe_et_l_affiner" class="toc">Tester sa courbe et l'affiner</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#checks" class="toc">CHECKS</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#checker_les_gradateurs" class="toc">Checker les gradateurs</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#checker_les_circuits_attribues" class="toc">Checker les circuits attribués</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="le_patch" id="le_patch">Le Patch&nbsp;</a></h1>
+<div class="level1">
+
+</div>
+
+<h4><a name="pour_acceder_au_patch" id="pour_acceder_au_patch">Pour accéder au Patch</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> à la souris clicker [PATCH]</div>
+</li>
+</ul>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=click_patch.jpg" class="media" title="click_patch.jpg"><img src="espace_circuits_patch_fichiers/fetch_002.jpg" class="media" title="click_patch.jpg" alt="click_patch.jpg" /></a>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> au clavier taper [SHIFT][P]</div>
+</li>
+</ul>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=patch_seul.jpg" class="media" title="patch_seul.jpg"><img src="espace_circuits_patch_fichiers/fetch_008.jpg" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h3><a name="utilite_du_patch" id="utilite_du_patch">Utilité du Patch</a></h3>
+<div class="level3">
+
+<p>
+
+Le patch électronique permet:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> de piloter depuis un circuit un ou plusieurs gradateurs</div>
+</li>
+<li class="level1"><div class="li"> ce pilotage, ce <strong>re-routage</strong>
+ des signaux permet d'avoir une logique personnelle dans la numérotation
+ de ses circuits et de son plan de feux: le circuit 1 sera toujours les 
+contres en 201, qui seront dans tel théâtre branchés au gradateur 60 ou 
+dans tel autre aux gradateurs 24 et 77. Plutôt que de devoir appeler 
+dans sa conduite à chaque fois des numéros qui ne sont pas les vôtres et
+ varient fonction des câblages de la salle, une fois fait le patch, pour
+ allumer vos contres en 201, vous utiliserez votre numéro de circuit à 
+vous, le 1.</div>
+</li>
+</ul>
+
+<p>
+
+<strong>C'est l'affectation de gradateurs à un circuit.</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> de régler des problèmes de réponses lumineuses. Ces problèmes peuvent être de plusieurs natures: </div>
+<ol>
+<li class="level2"><div class="li">la lampe du projecteur met plus de temps à briller et s'allume d'un coup à 25%( problématique du PAR)</div>
+</li>
+<li class="level2"><div class="li">les gradateurs du théâtre qui vous 
+acceuille sont très vieux, ce sont des analogiques avec des triacs bien 
+fatigués et des hystéris bien différentes. Leurs réponses électrique par
+ rapport à un même signal reçu sont extrêmement différentes d'un 
+gradateur à l'autre. Vous êtes contraint à mettre une partie de votre 
+face à 80 % alors que l'autre est à 50% et une autre à 65%, pour obtenir
+ un même résultat lumineux, une intensité similaire.</div>
+</li>
+<li class="level2"><div class="li">les caméras en télé sont plus 
+sensibles aux fluctuations d'intensité dans la zône des 50 à 70 %. On 
+préfèrera donc changer la courbe de réponse, la tricher( courbe TV, dite
+ “Square”).</div>
+</li>
+<li class="level2"><div class="li">certains gradateurs n'ont pas de courbes intégrées </div>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> de tricher (en faisant extrêment attention ) certaines problématiques:</div>
+<ol>
+<li class="level2"><div class="li">des PARS en 110v sans bretelle de 
+dérivation, que vous briderez en courbe à 50% pour éviter que la lampe 
+n'explose ( attention aux erreurs qui peuvent être lourdes de 
+conséquences pour les gens autour de l'appareil!)</div>
+</li>
+<li class="level2"><div class="li">un shutter vidéo en dmx monté à l'envers, où il vous faut délivrer 0 à 100% et 100 à 0%</div>
+</li>
+<li class="level2"><div class="li">la mise en place d'une fonction relais en on-off pour un allumage de sodium, etc etc…</div>
+</li>
+</ol>
+</li>
+</ul>
+
+<p>
+
+<strong>C'est l'utilisation de courbes.</strong>
+
+</p>
+
+</div>
+
+<h2><a name="convention_d_affichage" id="convention_d_affichage">Convention d'affichage</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> en premier le chiffre du gradateur piloté</div>
+</li>
+<li class="level1"><div class="li"> en dessous le chiffre du circuit qui le pilote</div>
+</li>
+<li class="level1"><div class="li"> en dernier la courbe affectée à ce gradateur</div>
+</li>
+</ul>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=convention_patch.jpg" class="media" title="convention_patch.jpg"><img src="espace_circuits_patch_fichiers/fetch_007.jpg" class="media" title="convention_patch.jpg" alt="convention_patch.jpg" /></a>
+</p>
+
+</div>
+
+<h2><a name="retour_d_infos" id="retour_d_infos">Retour d'infos</a></h2>
+<div class="level2">
+
+<p>
+
+On notera dans la fenêtre de retour d'infos:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> last ch selected:  le dernier circuit sélectionné, qui sera donc celui auquel on affectera les gradateurs sélectionnés</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> La chaine de dimmers au fur à mesure
+ qu'elle est saisie, avec les manipultaions de sélection et 
+d'affectation, est affichée sous last ch.</div>
+</li>
+</ul>
+
+<p>
+    Ici le Dimmer 12 et le dimmer 56 ont été affecté au channel 45
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=retour_patch.jpg" class="media" title="retour_patch.jpg"><img src="espace_circuits_patch_fichiers/fetch_005.jpg" class="mediacenter" title="retour_patch.jpg" alt="retour_patch.jpg" /></a>   
+</p>
+
+</div>
+
+<h1><a name="affectation_d_un_ou_plusieurs_gradateurs_a_un_circuit" id="affectation_d_un_ou_plusieurs_gradateurs_a_un_circuit">Affectation d'un ou plusieurs gradateurs à un circuit</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="selection_de_gradateurs_dimmers" id="selection_de_gradateurs_dimmers">Sélection de gradateurs (dimmers)</a></h2>
+<div class="level2">
+
+<p>
+
+La sélection des gradateurs se fait sur le même principe que celle des circuits:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> à la souris:</div>
+</li>
+</ul>
+<pre class="code">          En sélectionnant ou désélectionnant les gradateurs d'un click, et en naviguant via un ascenceur vertical dans les 512 gradateurs.<br />          Et clickant les fonctions du patch :<br />          [unselect] pour déselectionner tous les gradateurs sélectionnés <br />          [all] pour sélectionner tous les gradateurs (de 1 à 512)</pre>
+<ul>
+<li class="level1"><div class="li"> au clavier, saisie simple:</div>
+</li>
+</ul>
+<pre class="code">          Ex: Grada 5 en circuit 3:  [3][+] [5][SHIFT][ENTER]</pre>
+<pre class="code">          La touche d'attribution de niveau devient avec SHIFT une attribution de grada.</pre>
+<ul>
+<li class="level1"><div class="li"> au clavier, saisie complexe:  en utilisant exactement les mêmes raccourcis claviers <strong>doublés de la touche [SHIFT]</strong></div>
+</li>
+</ul>
+<pre class="code">          Au clavier, on sélectionnera les gradateurs ( dimmers) 4 et 6 en tapant [4][SHIFT][+] [6][SHIFT][+]<br />          On pourra tout sélectionner en faisant [SHIFT][Y]<br />          On pourra tout déselectionner en tapant [SHIFT][ESC]<br />          Faire une sélection de gradateurs chainée en utilisant [SHIFT][TAB]: [12][SHIFT][+][18][SHIFT][TAB]<br />          Déselectionner un gradateur avec [SHIFT][-].</pre>
+<pre class="code">          [SHIFT][ENTER] pour attribuer les gradateurs sélectionnés au dernier circuit sélectionné.</pre>
+
+</div>
+
+<h2><a name="affectation_d_un_circuit_a_un_gradateur" id="affectation_d_un_circuit_a_un_gradateur">Affectation d'un circuit à un gradateur</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> à la souris: </div>
+</li>
+</ul>
+<pre class="code">     clicker le circuit désiré dans la zône circuit.<br />     puis clicker [AFFECT]<br />     puis clicker le gradateur auquel affecter ce circuit<br />     reclicker [AFFECT] puis un autre gradateur pour en rajouter un<br />     ne pas oublier de faire [ESC] pour déselectionner le circuit </pre>
+<ul>
+<li class="level1"><div class="li"> au clavier:</div>
+</li>
+</ul>
+<pre class="code">     sélectionner le circuit à affecter.<br />     Puis l'affecter en tapant [SHIFT][ENTER].<br />     Dans le cas d'un patch sérieux, avec feuille de patch et une grande série d'affectation, une affectation clavier se fera ainsi:<br />     sélection des gradateurs à affecter: [3][SHIFT][+][4][SHIFT][+]<br />     sélection du circuit: [25][+]<br />     affectation: [SHIFT][ENTER]</pre>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=patch_affect.jpg" class="media" title="patch_affect.jpg"><img src="espace_circuits_patch_fichiers/fetch_006.jpg" class="mediacenter" title="patch_affect.jpg" alt="patch_affect.jpg" /></a>
+</p>
+
+</div>
+
+<h2><a name="desaffectation" id="desaffectation">Désaffectation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> à la souris: </div>
+</li>
+</ul>
+<pre class="code">     clicker le gradateur désiré<br />     puis clicker [CLEAR]</pre>
+<ul>
+<li class="level1"><div class="li"> au clavier:</div>
+</li>
+</ul>
+<pre class="code">     sélectionner le/les gradateurs<br />     taper [SHIFT][o] </pre>
+
+</div>
+
+<h2><a name="patcher_droit" id="patcher_droit">Patcher droit</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> à la souris: </div>
+</li>
+</ul>
+<pre class="code">     clicker le gradateur désiré.<br />     puis clicker [DEFAULT]</pre>
+<ul>
+<li class="level1"><div class="li"> au clavier:</div>
+</li>
+</ul>
+<pre class="code">     sélectionner le/les gradateurs<br />     taper [SHIFT][I] </pre>
+<pre class="code">   ! où on en déduit que mettre tout son patch droit équivaut à faire [SHIFT][Y][SHIFT][I]<br />   ! où on en déduit que pour effacer tout le patch et tout désaffecter il faut faire [SHIFT][Y][SHIFT][O] </pre>
+
+</div>
+
+<h2><a name="check_channel" id="check_channel">Check Channel</a></h2>
+<div class="level2">
+
+<p>
+
+Les touches [GAUCHE] et [DROITE] permettent de sélectionner le circuit précédent, ou le circuit suivant.
+</p>
+
+<p>
+[CTRL][GAUCHE] ou [CTRL][DROITE] envoient le circuit à Full.
+</p>
+
+<p>
+<strong>Si la fenêtre de Patch est ouverte, les gradateurs affectés à ce circuit seront sélectionnés.</strong>
+</p>
+
+</div>
+
+<h2><a name="patcher_avec_les_gradas_affiches_sous_les_circuits" id="patcher_avec_les_gradas_affiches_sous_les_circuits">Patcher avec les gradas affichés sous les circuits</a></h2>
+<div class="level2">
+
+<p>
+
+Le mode [SHOW 1ST DIMMER] permet d'afficher dans l'espace circuits les 4 premiers gradas affectés à un circuit.
+Au dessus de 4 gradas affectés à un circuit un petit [+] s'affiche.
+</p>
+
+<p>
+Pour l'enclencher clicker [SHOW 1ST DIMMER].
+</p>
+
+<p>
+Cette option est notamment fort utile avec [LightPlot].
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=patch_show1stdim.jpg" class="media" title="patch_show1stdim.jpg"><img src="espace_circuits_patch_fichiers/fetch_004.jpg" class="media" title="patch_show1stdim.jpg" alt="patch_show1stdim.jpg" /></a>
+</p>
+
+</div>
+
+<h2><a name="patcher_depuis_le_plan_lumiere" id="patcher_depuis_le_plan_lumiere">Patcher depuis le plan lumière</a></h2>
+<div class="level2">
+
+<p>
+
+Le mode [LINK LIGHTPLOT] permet de patcher et dépatcher depuis le plan 
+lumière, et de prendre en considération les changements faits dans le 
+patch.
+</p>
+
+<p>
+Pour l'enclencher clicker [LINK LIGHTPLOT].
+</p>
+
+<p>
+Voir: <a href="plot.htm" class="wikilink1" title="plot">Light Plot: le plan lumière intégré</a>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=patch_lightplot.jpg" class="media" title="patch_lightplot.jpg"><img src="espace_circuits_patch_fichiers/fetch.jpg" class="media" title="patch_lightplot.jpg" alt="patch_lightplot.jpg" /></a>
+</p>
+
+</div>
+
+<h1><a name="affecter_une_courbe_curves" id="affecter_une_courbe_curves">Affecter une courbe (Curves)</a></h1>
+<div class="level1">
+
+<p>
+
+Une courbe est donc un trichage du signal, faite de manière purement 
+logicielle, de façon à compenser l'émission linéaire d'un niveau, à 
+l'arrondir, le brider, ou l'incurver…
+</p>
+
+<p>
+<strong>On accède à l'éditeur de courbes en clickant [Curve]</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=curves.jpg" class="media" title="curves.jpg"><img src="espace_circuits_patch_fichiers/fetch_003.jpg" class="media" alt="" /></a>
+
+</p>
+
+</div>
+
+<h2><a name="fonctionnement_de_l_edition_de_courbes" id="fonctionnement_de_l_edition_de_courbes">Fonctionnement de l'édition de courbes:</a></h2>
+<div class="level2">
+
+<p>
+
+<strong>La courbe du signal est ainsi représentée:</strong>
+</p>
+
+<p>
+<strong>-en blanc le niveau du signal issu des circuits</strong>
+</p>
+
+<p>
+<strong>-en rouge le niveau du signal triché, en sortie Dmx</strong>
+</p>
+
+<p>
+Il y a 5 points de contrôle que l'on peut déplacer sur la grille. 
+</p>
+
+<p>
+Ces contrôles peuvent être déplacés. La courbe les reliant peut être 
+modifiée selon une courbe de béziers dont le facteur est modulable sur 
+l'ensemble de la courbe ( tirette rouge sous le tableau).
+</p>
+
+<p>
+Il y a 16 courbes d'enregistrables dans White Cat.
+La courbe 1 est la courbe par défaut affectée à chacun des dimmers. Vous ferez attention à l'éditer que si vraiment désiré.
+
+</p>
+
+</div>
+
+<h2><a name="creation_d_une_courbe" id="creation_d_une_courbe">Création d'une courbe:</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Sélectionnez une des 16 courbes de votre choix en clickant dessus sur l'une des docks de 1 à 16.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Enclenchez le mode Edit en clickant sur [EDIT]</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Editez la courbe comme désiré, en 
+clickant au dessus d'un des 5 points de contrôle, ou sur l'axe vertical 
+passant par ce point de contrôle.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="affectation_d_une_courbe_a_un_gradateur" id="affectation_d_une_courbe_a_un_gradateur">Affectation d'une courbe à un gradateur:</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Sélectionner les gradateurs auquels affecter la courbe sélectionnée ( sur l'image il s'agit de la courbe n°2)</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Clickez [Affect to dimmer]. Les gradateurs se sont vus affectés la courbe 2.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="charger_un_preset_de_courbe_dans_une_des_16_courbes_personnelles" id="charger_un_preset_de_courbe_dans_une_des_16_courbes_personnelles">Charger un preset de courbe dans une des 16 courbes personnelles</a></h2>
+<div class="level2">
+
+<p>
+
+Dans le cas d'un besoin de nettoyage de courbe, on peut charger un modèle de courbe.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Enclenchez le mode Edit en clickant sur [EDIT]</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Sélectionner par un click de souris l'un des 4 modèles de courbes chargeables:</div>
+</li>
+</ul>
+<pre class="code">[linear] pour la courbe droite<br />[square] pour la courbe télé<br />[preheat] pour une courbe préchauffant le filament des PARS<br />[fluo] pour une courbe dédiée aux fluorescents graduables</pre>
+<ul>
+<li class="level1"><div class="li"> Clickez la courbe à laquelle affecter ce preset.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> La courbe est désormais chargée avec la base désirée, que vous pouvez désormais modifier à volonté.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="remettre_en_lineaire_toutes_les_courbes_de_son_patch_sans_toucher_a_l_affectation_des_gradateurs" id="remettre_en_lineaire_toutes_les_courbes_de_son_patch_sans_toucher_a_l_affectation_des_gradateurs">Remettre en linéaire toutes les courbes de son patch sans toucher à l'affectation des gradateurs</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Sélectionner par un click de souris le modèle  [linear]</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Clicker la courbe par défaut de votre choix (par ex la courbe 1)</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Sélectionner tous les gradateurs par un [SHIFT][Y]</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Clicker [Affect to dimmer].</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Terminer par une déselection de tous les gradateurs: [SHIFT][ESC]</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="tester_sa_courbe_et_l_affiner" id="tester_sa_courbe_et_l_affiner">Tester sa courbe et l'affiner</a></h2>
+<div class="level2">
+
+<p>
+
+Il faut charger le circuit qui pilote le gradateur pour lequel on édite la courbe, dans un Master. 
+
+</p>
+<ol>
+<li class="level1"><div class="li">Sélectionner le circuit voulu à full</div>
+</li>
+<li class="level1"><div class="li">clicker [STORE] ou taper [F1]</div>
+</li>
+<li class="level1"><div class="li">clicker le dock du master choisit</div>
+</li>
+<li class="level1"><div class="li">monter le niveau du master en question</div>
+</li>
+<li class="level1"><div class="li">travailler votre courbe</div>
+</li>
+</ol>
+
+<p>
+
+Voir en profondeur: la section <a href="espace_faders2.htm" class="wikilink1" title="espace_faders">L'espace Faders</a> pour charger une sélection de circuits à un niveau donné dans un master.
+</p>
+
+</div>
+
+<h1><a name="checks" id="checks">CHECKS</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="checker_les_gradateurs" id="checker_les_gradateurs">Checker les gradateurs</a></h2>
+<div class="level2">
+
+<p>
+0.7.5
+Le check gradateurs se fait en clickant <strong>[Check Dimmers]</strong>
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Sélectionnez à la souris un gradateur</div>
+</li>
+<li class="level1"><div class="li"> Utilisez le clavier: <strong>[SHIFT][LEFT]</strong> ou <strong>[SHIFT][RIGHT]</strong>
+ pour naviguer dans les gradateurs et les envoyer, en by-passant ainsi 
+le patch et les envois de data pour le gradateur séléctionné.</div>
+</li>
+</ol>
+
+<p>
+
+L'envoi se fait par défaut à 75% de façon à préserver les lampes de 5kw 
+et de 2kw. Ce niveau peut être modifié depuis la fenêtre de <a href="configuration_generale.htm" class="wikilink1" title="configuration_generale">configuration générale</a><a href="configuration_generale.htm">.</a>
+</p>
+
+<p>
+Vous ne voyez rien sur l'écran: le signal est by-passé directement dans le buffer dmx envoyé à l'interface.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=espace_circuits_patch&amp;media=patch_check_dimmers.jpg" class="media" title="patch_check_dimmers.jpg"><img src="espace_circuits_patch_fichiers/fetch_009.jpg" class="media" title="patch_check_dimmers.jpg" alt="patch_check_dimmers.jpg" /></a>
+</p>
+
+</div>
+
+<h2><a name="checker_les_circuits_attribues" id="checker_les_circuits_attribues">Checker les circuits attribués</a></h2>
+<div class="level2">
+
+<p>
+
+Pour tester les circuits et voir si ils sont bien patchés, clicker le premier circuit à tester, dans l'espace circuits.
+</p>
+
+<p>
+Puis avec les flèches, faire <strong> [CTRL][LEFT]</strong> ou <strong>[CTRL][RIGHT]</strong> au clavier.
+</p>
+
+<p>
+Vous vous déplacez ainsi dans les circuits en faisant briller à 100% 
+chaque circuit (Ce niveau peut être modifié depuis la fenêtre de <a href="configuration_generale.htm" class="wikilink1" title="configuration_generale">configuration générale</a>).
+ Cette procédure, dite CHECK CHANNEL, peut être aussi utile pour 
+vérifier avant le début d'un spectacle qu'aucune lampe n'est morte lors 
+des répétitions ou de la représentation de la veille.
+
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <div class="doc">
+        espace_circuits_patch.txt · Dernière modification: 2012/07/08 09:25 par christoph      </div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <form class="button btn_source" method="post" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="edit" type="hidden" /><input name="rev" value="" type="hidden" /><input name="id" value="espace_circuits_patch" type="hidden" /><input value="Afficher le texte source" class="button" accesskey="v" title="Afficher le texte source [V]" type="submit" /></div></form>        <form class="button btn_revs" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="revisions" type="hidden" /><input name="id" value="espace_circuits_patch" type="hidden" /><input value="Anciennes révisions" class="button" accesskey="o" title="Anciennes révisions [O]" type="submit" /></div></form>      </div>
+      <div class="bar-right" id="bar__bottomright">
+                                        <form class="button btn_login" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="login" type="hidden" /><input name="sectok" value="1ca3f7797df1c4c436ada6279f6a7330" type="hidden" /><input name="id" value="espace_circuits_patch" type="hidden" /><input value="Connexion" class="button" title="Connexion" type="submit" /></div></form>        <form class="button btn_index" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="index" type="hidden" /><input name="id" value="espace_circuits_patch" type="hidden" /><input value="Index" class="button" accesskey="x" title="Index [X]" type="submit" /></div></form>        <a class="nolink" href="#dokuwiki__top"><input class="button" value="Haut de page" onclick="window.scrollTo(0, 0)" title="Haut de page" type="button" /></a>&nbsp;
+      </div>
+      <div class="clearer">
+    </div>
+
+  </div>
+
+  <div class="license">Sauf mention contraire, le contenu de ce wiki est placé sous la licence suivante:<a href="http://www.gnu.org/licenses/fdl-1.2.html" rel="license" class="urlextern">GNU Free Documentation License 1.2</a></div>
+</div>
+
+<div class="footerinc">
+
+  <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php" title="Recent changes RSS feed"><img src="espace_circuits_patch_fichiers/button-rss.png" alt="Recent changes RSS feed" height="15" width="80" /></a>
+
+        <a href="http://www.gnu.org/licenses/fdl-1.2.html" rel="license" title="GNU Free Documentation License 1.2"><img src="espace_circuits_patch_fichiers/gnufdl.png" alt="" height="15" width="80" /></a>
+  
+  <a href="http://www.dokuwiki.org/donate" title="Donate"><img src="espace_circuits_patch_fichiers/button-donate.gif" alt="Donate" height="15" width="80" /></a>
+
+  <a href="http://www.php.net/" title="Powered by PHP"><img src="espace_circuits_patch_fichiers/button-php.gif" alt="Powered by PHP" height="15" width="80" /></a>
+
+  <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="espace_circuits_patch_fichiers/button-xhtml.png" alt="Valid XHTML 1.0" height="15" width="80" /></a>
+
+  <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="espace_circuits_patch_fichiers/button-css.png" alt="Valid CSS" height="15" width="80" /></a>
+
+  <a href="http://dokuwiki.org/" title="Driven by DokuWiki"><img src="espace_circuits_patch_fichiers/button-dw.png" alt="Driven by DokuWiki" height="15" width="80" /></a>
+
+
+
+</div>
+
+<div class="no"><img src="espace_circuits_patch_fichiers/indexer.gif" alt="" height="1" width="1" /></div>
+
+
+
+
+</div></div></div></div></body></html>

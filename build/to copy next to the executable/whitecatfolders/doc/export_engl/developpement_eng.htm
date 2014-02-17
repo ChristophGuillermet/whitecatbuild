@@ -1,0 +1,913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" dir="ltr" lang="fr"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    developpement_eng    [White Cat lighting board]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b">
+<meta name="robots" content="index,follow">
+<meta name="date" content="2011-04-22T14:53:50+0200">
+<meta name="keywords" content="developpement_eng">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/opensearch.php" title="White Cat lighting board">
+<link rel="start" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/">
+<link rel="contents" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=developpement_eng&amp;do=index" title="Index">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php?mode=list&amp;ns=">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?do=export_xhtml&amp;id=developpement_eng">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?do=export_raw&amp;id=developpement_eng">
+<link rel="stylesheet" media="all" type="text/css" href="developpement_eng_fichiers/css.css">
+<link rel="stylesheet" media="screen" type="text/css" href="developpement_eng_fichiers/css_003.css">
+<link rel="stylesheet" media="print" type="text/css" href="developpement_eng_fichiers/css_002.css">
+<script type="text/javascript" charset="utf-8" src="developpement_eng_fichiers/js.php"></script>
+
+  <link rel="shortcut icon" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/tpl/default/images/favicon.ico">
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=developpement_eng&amp;do=backlink" title="Liens vers cette page">developpement_eng</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php" name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">White Cat lighting board</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_source" method="post" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="edit" type="hidden"><input name="rev" value="" type="hidden"><input name="id" value="developpement_eng" type="hidden"><input value="Afficher le texte source" class="button" accesskey="v" title="Afficher le texte source [V]" type="submit"></div></form>        <form class="button btn_revs" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="revisions" type="hidden"><input name="id" value="developpement_eng" type="hidden"><input value="Anciennes révisions" class="button" accesskey="o" title="Anciennes révisions [O]" type="submit"></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="recent" type="hidden"><input name="id" value="developpement_eng" type="hidden"><input value="Derniers changements" class="button" accesskey="r" title="Derniers changements [R]" type="submit"></div></form>        <form action="/whitecat/dokuwiki/doku.php" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input name="do" value="search" type="hidden"><input id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" type="text"><input value="Rechercher" class="button" title="Rechercher" type="submit"><div style="display: none;" id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+        <div class="breadcrumbs">
+      <span class="bchead">Piste:</span> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=introduction_eng" class="breadcrumbs" title="introduction_eng">introduction_eng</a> <span class="bcsep">»</span> <span class="curid"><a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=developpement_eng" class="breadcrumbs" title="developpement_eng">developpement_eng</a></span>          </div>
+    
+    
+  </div>
+  
+  
+
+
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span style="cursor: pointer;" class="toc_close" id="toc__toggle"><span>−</span></span>Table des matières</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#actual_state_of_developpement" class="toc">Actual State of Developpement</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#known_bugs" class="toc">Known Bugs</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#audio_playersstrange_behaviours_on_cues_and_loop" class="toc">Audio Players: strange behaviours on cues and loop</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#what_is_not_yet_written" class="toc">What is not yet written</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#historique_des_versions" class="toc">Historique des versions</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="actual_state_of_developpement" id="actual_state_of_developpement">Actual State of Developpement</a></h1>
+<div class="level1">
+
+</div>
+
+<h1><a name="known_bugs" id="known_bugs">Known Bugs</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="audio_playersstrange_behaviours_on_cues_and_loop" id="audio_playersstrange_behaviours_on_cues_and_loop">Audio Players: strange behaviours on cues and loop</a></h2>
+<div class="level2">
+
+<p>
+
+Little audio files may have stranhge behaviour in loop or cue + loop 
+mode if the file is not in 44100Hz and the audio mode is in pre-load 
+option is activated( menu [MAIN CFG] &gt; General ). 
+</p>
+
+</div>
+
+<h1><a name="what_is_not_yet_written" id="what_is_not_yet_written">What is not yet written</a></h1>
+<div class="level1">
+
+</div>
+
+<h5><a name="actually_writting" id="actually_writting">Actually writting:</a></h5>
+<div class="level5">
+
+<p>
+
+-mover, for moving heads
+-midi automute for non remoted midi devices
+</p>
+
+</div>
+
+<h5><a name="menus" id="menus">Menus</a></h5>
+<div class="level5">
+
+<p>
+
+-timeline, to create events on a time-base
+</p>
+
+<p>
+-groups: Ctrl-1 Ctrl-2 … : to make 10 groups to store channel selection
+</p>
+
+<p>
+-Plot, a lighting plot editor integrated
+</p>
+
+<p>
+-a video player home made
+</p>
+
+</div>
+
+<h5><a name="dmx" id="dmx">DMX</a></h5>
+<div class="level5">
+
+<p>
+
+-artnet out/In : Subnet to add
+</p>
+
+<p>
+-Enttec Pro: need to rewrite everything to gain a IN+OUT more smoother.  DMX IN with Enttec Pro is not at all great.
+</p>
+
+</div>
+
+<h5><a name="sauvegardes" id="sauvegardes">Sauvegardes</a></h5>
+<div class="level5">
+
+<p>
+
+-<acronym title="American Standard Code for Information Interchange">ASCII</acronym>: Groups not taken in charge
+-<acronym title="American Standard Code for Information Interchange">ASCII</acronym>: export alq (strand) patch not implemented
+-<acronym title="American Standard Code for Information Interchange">ASCII</acronym>: Congo Junior doesnt read WhiteCat ascii export
+</p>
+
+</div>
+
+<h5><a name="network_and_remoting" id="network_and_remoting">Network and remoting</a></h5>
+<div class="level5">
+
+<p>
+
+-OSC protocol 
+</p>
+
+</div>
+
+<h1><a name="historique_des_versions" id="historique_des_versions">Historique des versions</a></h1>
+<div class="level1">
+
+</div>
+
+<h4><a name="mars_2011" id="mars_2011">0.8.2, 02 mars 2011</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="nouveaute" id="nouveaute">nouveauté:</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> fenêtre chasers !</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="ameliorations" id="ameliorations">améliorations:</a></h5>
+<div class="level5">
+
+<p>
+
+FADERS:
+</p>
+<ul>
+<li class="level1"><div class="li"> direct Chan: allers retours du descriptif Dock ↔ descriptif d'un projecteur dans LIST </div>
+</li>
+<li class="level1"><div class="li"> il y a désormais un seul MasterLock, qui est le 1er fader rencontré à Full en Lock en partant de la gauche</div>
+</li>
+</ul>
+
+<p>
+
+MIDI:
+</p>
+<ul>
+<li class="level1"><div class="li"> extension des affectations midi: les
+ tableaux d'affectation doublent de taille (2048 entrées).Donc ne vous 
+inquitez pas au chargement de spectacles venant de versions précédentes</div>
+</li>
+<li class="level1"><div class="li"> la fenêtre de retours d'infos en 
+sauvegarde n'apparait que si il y a un souci au chargement ou à la 
+sauvegarde (aka adaptations de versions et fichiers manquants)</div>
+</li>
+<li class="level1"><div class="li"> report des infos chrono dans la partie retour d'infos</div>
+</li>
+</ul>
+
+<p>
+ 
+ARDUINO:
+</p>
+<ul>
+<li class="level1"><div class="li"> ARDUINO UNO intégrée ( le dossier ressources/arduino/ comprend un script pour la 2009 </div>
+</li>
+</ul>
+
+<p>
+
+fonctionnant sous version 18 et un script pour l'UNO sous version 
+22).L'UNO a besoin de 10 secondes avant émission de ses datas lors de la
+ première ouverture de whitecat.
+ 
+</p>
+<ul>
+<li class="level1"><div class="li"> NAME: fonction autoclose ( XX ) de 
+la fenêtre, eprmettant de laisser actif ou pas pour saisir en série des 
+descriptions rajout d'un mode annotation pour les mémoires.  clicker la 
+case ANN pour enclencher le mode. Le texte affecté à une mémoire devient
+ une annotation ( couleur grise). Cette fonction permet de donner deux 
+type d'indications différentes ( nom de scène  et tops ).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> BANGER: Chasers et Minifaders. Attention pas de Go Back pour l'instant.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="debug" id="debug">debug:</a></h5>
+<div class="level5">
+
+<p>
+
+FADERS:
+</p>
+<ul>
+<li class="level1"><div class="li"> comportement de saw: ne démarrait 
+pas quand conduite chargée à sec, réglé sur click souris Saw / Fader, 
+MiniFaders, MidiIn, Banger, Arduino </div>
+</li>
+<li class="level1"><div class="li"> fonction modify/type color</div>
+</li>
+<li class="level1"><div class="li"> position barre des faders récupérée au démarrage </div>
+</li>
+</ul>
+
+<p>
+BANGER:
+</p>
+<ul>
+<li class="level1"><div class="li"> Set At : les niveaux sont désormais identiques entre SetAt dans Banger et le niveau effectif du fader</div>
+</li>
+<li class="level1"><div class="li"> SetFader en DC n'écrivait pas dans le séquenciel</div>
+</li>
+</ul>
+
+<p>
+PATCH:
+</p>
+<ul>
+<li class="level1"><div class="li"> bug de l'écran noir sur les SHIFT-TAB SHIFT-ENTER laissés appuyés</div>
+</li>
+</ul>
+
+<p>
+LIST:
+</p>
+<ul>
+<li class="level1"><div class="li"> affichage limité aux 512 circuits</div>
+</li>
+</ul>
+
+<p>
+MINIFADERS:
+</p>
+<ul>
+<li class="level1"><div class="li"> RECALL sur les fonctions ALL AT ZERO ne fonctionnait pas</div>
+</li>
+<li class="level1"><div class="li"> Affichage du stop pos pas rafraichi correctement</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="janvier_2011" id="janvier_2011">0.8.1, 15 janvier 2011</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="ameliorations1" id="ameliorations1">améliorations:</a></h5>
+<div class="level5">
+
+<p>
+
+MIDI:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> affinage des procedures de trichage midi ( rajout d'un trichage key-on key-off spécifique à chaque note)</div>
+</li>
+<li class="level1"><div class="li"> ajout d'une visualisation du signal original + le résultat triché</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="debug1" id="debug1">débug:</a></h5>
+<div class="level5">
+
+<p>
+
+BANGER:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> bug banger départs intempestifs</div>
+</li>
+<li class="level1"><div class="li"> limitation du nbre de bangers de 1 à 127</div>
+</li>
+<li class="level1"><div class="li"> init au démarrage réglée ( bug déclenchement banger 73 au démarrage)</div>
+</li>
+<li class="level1"><div class="li"> set cue player audio</div>
+</li>
+</ul>
+
+<p>
+
+SEQUENCIEL:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> delay dans un crossfade par un départ en link n'était pas actif</div>
+</li>
+<li class="level1"><div class="li"> clean nom memoire, auto go et banger à la création d'une mémoire sur une ancienne mémoire effacée</div>
+</li>
+</ul>
+
+<p>
+
+FADERS:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Direct CH ne montait pas au dessus de 254 circuits</div>
+</li>
+<li class="level1"><div class="li"> Direct CH 0</div>
+</li>
+<li class="level1"><div class="li"> flash  en Direct CH</div>
+</li>
+<li class="level1"><div class="li"> fader locké applique sa valeur au Direct CH</div>
+</li>
+<li class="level1"><div class="li"> niveaux faders “fantômes”: nettoyage
+ du buffer issu de chaque Fader lors de l'assignation de familles 
+différentes ( direct CH / Sub / Memoire / Color …)</div>
+</li>
+</ul>
+
+<p>
+
+AUDIO:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> controle du pitch par un fader</div>
+</li>
+<li class="level1"><div class="li"> fichier audios limités à 127 dans un dossier</div>
+</li>
+</ul>
+
+<p>
+
+MIDI:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> récupération de l affectation midi du numpad et des grandes commandes</div>
+</li>
+</ul>
+
+<p>
+
+DIVERS:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> level flèche moins va jusqu'à 0 complet en mode %</div>
+</li>
+<li class="level1"><div class="li"> check channel + prend en compte le niveau donné dans le setup</div>
+</li>
+<li class="level1"><div class="li"> vidage des buffers de chaque fader à chargement d'un autre type dans un dock (DCH, Color)</div>
+</li>
+<li class="level1"><div class="li"> position fenêtre List à l'ouverture de WCAT</div>
+</li>
+<li class="level1"><div class="li"> ARTNET conf posait souci (conséquence bug banger)</div>
+</li>
+<li class="level1"><div class="li"> Export pdf Patch</div>
+</li>
+<li class="level1"><div class="li"> nbre audioplayers en sauvegarde / chargement</div>
+</li>
+<li class="level1"><div class="li"> affichage de l'origine/destination 
+de Last Save ( venu d'une conduite, importé d'un ascii / sauvé sous un 
+autre nom, exporté en ascii )</div>
+</li>
+<li class="level1"><div class="li"> bug check dimmer (conséquence bug banger)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="novembre_2010" id="novembre_2010">0.8, 14 novembre 2010</a></h4>
+<div class="level4">
+
+<p>
+nouveautés:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> arduino (2009 et précédentes)</div>
+</li>
+<li class="level1"><div class="li"> feedback lumineux pour launchpad </div>
+</li>
+<li class="level1"><div class="li"> fenêtre minifaders (shift-F10)</div>
+</li>
+</ul>
+
+<p>
+
+ameliorations:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> simplification des affectations midi </div>
+</li>
+<li class="level1"><div class="li"> ajout d'un Flash, Loop/Unloop et LoopAll/unloopAll</div>
+</li>
+<li class="level1"><div class="li"> banger: rajout d'un Load and Play Audio en une seule opération ( Val 1= lecteur Val 2= fichier)</div>
+</li>
+<li class="level1"><div class="li"> mise en fenêtre des minifaders et report des AllAtZero et Lock Preset dans cette fenêtre</div>
+</li>
+</ul>
+
+<p>
+
+debug:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> système fenêtres et clicks transperçants</div>
+</li>
+<li class="level1"><div class="li"> bug des désaffectations midi réglé</div>
+</li>
+<li class="level1"><div class="li"> sauvegarde temporaire enlevée ( pb d instabilité avec VVVV et sauvegardes diverses )</div>
+</li>
+<li class="level1"><div class="li"> banger, departs multiples et temps, banger 1 au démarrage  </div>
+</li>
+<li class="level1"><div class="li"> export pdf: temps stockes dans docks étaient inversés IN/OUT</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="septembre_2010" id="septembre_2010">0.7.6.5, 4 septembre 2010</a></h4>
+<div class="level4">
+
+<p>
+
+Correctif majeur ( bug des sauvegardes).
+</p>
+
+<p>
+Nouveautés:
+</p>
+<ul>
+<li class="level1"><div class="li"> multicore: affectation à un Core de White Cat   </div>
+</li>
+<li class="level1"><div class="li"> améliorations des options Network pour art-net ( port in et out , détections adresses IP etc)</div>
+</li>
+<li class="level1"><div class="li"> automatisation d'une sauvegarde 
+temporaire ( dossier tmp) toutes les x minutes (minimum 3 minutes). En 
+cas de coup de trafalgar, charger le spectacle tmp via la fenetre save</div>
+</li>
+</ul>
+
+<p>
+
+Débug: export ascii ok, debug des sauvegardes et fin des dossiers de 0Ko
+</p>
+
+</div>
+
+<h4><a name="section0764" id="section0764">0.7.6.4</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> première mise en ligne aout 2010:</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> minifaders (vue generale) et flash</div>
+</li>
+<li class="level1"><div class="li"> direct-channel mode pour les faders ( liaison fader/circuit conduite)</div>
+</li>
+<li class="level1"><div class="li"> les courbes sont aussi affectables aux faders (notamment pour le son ), et peuvent être assignables via banger</div>
+</li>
+<li class="level1"><div class="li"> automatisation d'une sauvegarde 
+temporaire ( dossier tmp) toutes les x minutes (minimum 3 minutes). En 
+cas de coup de trafalgar, charger le spectacle tmp via la fentre save</div>
+</li>
+<li class="level1"><div class="li"> une interface pour les 127 Banger 
+permet de les déclencher manuellement à la souris, ou fe faire un goback
+ sec en reclickant dessus. Ce goback n est possible que dans le temps 
+global du Banger. Si ce dernier possède des actions tres courtes, 
+calibrer le Bang Stay-on en 3 ou 5 secondes, ou ce que vous voulez, dans
+ le menu CFG</div>
+</li>
+<li class="level1"><div class="li"> creation d un fichier de sauvegarde des paramètres dits généraux, dans users </div>
+</li>
+<li class="level1"><div class="li"> blocage possible du grand master 
+dans le setup general. Important si vous travaillez en artnet avec vvvv,
+ si vous avez des circuits appelant des presets…</div>
+</li>
+<li class="level1"><div class="li"> rajout dans les preset options du midi d une inversion de signal ( 0-127 / 127-0)</div>
+</li>
+<li class="level1"><div class="li"> audio: option preload dans le CFG menu on read pour le chargement ou pas en mémoire du fichier audio à son appel dans un player</div>
+</li>
+<li class="level1"><div class="li"> retour renvoi midi et stop pos: les valeurs n etaient pas bonnes</div>
+</li>
+<li class="level1"><div class="li"> Banger: debug du Bang it manuel qui 
+ne lancait pas correctment les salves d evenements. A tester et voir, si
+ c est ok ( verif à la mano et via sequenciel). le sequenciel n a pas 
+été touché.</div>
+</li>
+<li class="level1"><div class="li"> système de fenêtres et espace faders: fin du portage du systeme de fenetres, ca semble ok</div>
+</li>
+<li class="level1"><div class="li"> SAVE: sauvegardes avec fichiers à 0 
+koctets. Lors d'une deuxieme sauvegarde sous un autre nom, whitecat 
+créait des fichiers de 0 kO. </div>
+</li>
+<li class="level1"><div class="li"> PATCH: fleches latérales, ou fleches laterales + control sont prises en compte dans l affecation des gradas</div>
+</li>
+<li class="level1"><div class="li"> EXPORT <acronym title="American Standard Code for Information Interchange">ASCII</acronym>: un erreur de frappe dans le code en version 0.7.6.3 faisait planter le matoux</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="section0763" id="section0763">0.7.6.3</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> première mise en ligne juillet 2010:</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> wizard menu: manipulation des mémoires et circuits par lots</div>
+</li>
+<li class="level1"><div class="li"> deplacement des touches de fonctions ctrl-c et ctrl-v dans le numpad</div>
+</li>
+<li class="level1"><div class="li"> ajout d'un menu CFG pour divers 
+paramètres qui recoit notamment le changement de vision dmx/%, l  
+affichage des circuits clignotants, le paramétrage des levels des 
+touches up down, et les temps par defaut</div>
+</li>
+<li class="level1"><div class="li"> changement du mode de calcul des step levels ups down </div>
+</li>
+<li class="level1"><div class="li"> fenetre audio: nombre de lecteurs ( 1/2/3 ou 4) paramétrable dans le menu de CFG general</div>
+</li>
+<li class="level1"><div class="li"> limitation de la manipulation de la 
+souris dans un fader lorsqu'elle est cliquée: faders de faders, 
+séquenciel, accéléromètre de faders et du séquenciel</div>
+</li>
+<li class="level1"><div class="li"> rajout de l'affectation midi des commandes du séquenciel: Create Mem, Delete Mem, Stage -/+, Preste -/+ </div>
+</li>
+<li class="level1"><div class="li"> grand master dans la barre des faders n etait pas activable ( du à la refonte du systeme des fenetres)</div>
+</li>
+<li class="level1"><div class="li"> séquenciel: rafraichissement du 
+séquenciel réglé sur ctrl W/X et ses équivalents souris Stage+/- Preset 
++/- en cours de crossfade ou en pause</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="section0762" id="section0762">0.7.6.2</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> première mise en ligne juin 2010:</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>export pdf</strong>. L'export texte n'existe plus</div>
+</li>
+<li class="level1"><div class="li"> import ascii: séquenciel rafraichi à
+ l'import / inversions de temps réglées / clean de la conduite en 
+mémoire amélioré    &gt; reste la question des delay in out </div>
+</li>
+<li class="level1"><div class="li"> visibilité ascenceur faders</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="section076" id="section076">0.7.6</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> première mise en ligne 30 mai 2010:</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> audioplayers: whitecat comprend 
+désormais 4 lecteurs audio intégrés, pilotables en idi, ou incorporables
+ dans des mémoires via banger.</div>
+</li>
+<li class="level1"><div class="li"> creation d'une fenetre unique 
+bougeable pour les CFG. Elle comprend DMX CFG / DMX-IN / MIDI CFG / 
+NETWORK CFG / ARTNET &gt; DOCK</div>
+</li>
+<li class="level1"><div class="li"> le dmx est opérationnel sans 
+license. seule la sauvegarde ( classique ou export ascii ) est 
+conditionnée à une license. charger un spectacle, importer une conduite 
+sont accessibles sans license.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li">shift F3: creation de memoires en Report des faders ( master + stage), uniquement onstage</div>
+</li>
+<li class="level1"><div class="li">rajout envoi Ctrl-Change Vel 0 et Ctrl-Change par Channel midi , où le pitch et la vélocité sont paramétrables</div>
+</li>
+<li class="level1"><div class="li">remote des boutons en midi Bang it , navigation + - et bangers solos</div>
+</li>
+<li class="level1"><div class="li">rajout d'une fonction clear complet d'un player audio</div>
+</li>
+<li class="level1"><div class="li">rajout d'une roue de niveau en mode relatif ou absolu pour pilotage midi </div>
+</li>
+<li class="level1"><div class="li">remote des boutons en midi</div>
+</li>
+<li class="level1"><div class="li">possibilité de ne pas désaffecter automatiquement, pour commandes exotiques</div>
+</li>
+<li class="level1"><div class="li">la pin d'affectation reste active une fois l'activation faite</div>
+<ul>
+<li class="level4"><div class="li">grandes commandes et appels de fenetres pilotables en midi</div>
+</li>
+<li class="level4"><div class="li">fenetre time entièrement affectable en midi ( rotos / boutons ), renvoi midi out de la roue de temps</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li">remote des faders son </div>
+</li>
+<li class="level1"><div class="li">stopPos ( butée aux LFO )</div>
+</li>
+<li class="level1"><div class="li">l'ascenceur horizontal est affectable en midi ( ctrl change)</div>
+</li>
+<li class="level1"><div class="li">option DoubleDMX pour les intrefaces 
+en USB: la sortie DMX art-net est envoyable en simultanné, permettant 
+aux possesseurs d'interfaces DMX USB de travailler avec des logiciels 
+tiers en art-net</div>
+</li>
+<li class="level1"><div class="li">dans user/ le fichier config_dmx 
+permet de spécifier le taux de rafraichissement vers l interface, ainsi 
+que le taux de rafraichissement dmx in</div>
+</li>
+<li class="level1"><div class="li">in off de la réception art net</div>
+</li>
+<li class="level1"><div class="li">systeme de fenetres amélioré ( 
+chevauchements et clicks “transperçants”). PGDOWN sert à naviguer dans 
+les fenetres actives.CTRL-PDDOWN permet d'appeler en solo les fenetres 
+autorisées </div>
+</li>
+</ul>
+
+<p>
+debug:
+
+</p>
+<ul>
+<li class="level1"><div class="li">changement de la clé de cryptage</div>
+</li>
+</ul>
+
+<p>
+banger: 
+</p>
+<ul>
+<li class="level1"><div class="li">le déclenchement des bangs depuis une mem s'arretait sur temps in/out différents, refonte de l'algo</div>
+</li>
+<li class="level1"><div class="li">declenchement bang solo réglé (bug en  versions 0.7.5.5 et 0.7.5.8)</div>
+</li>
+</ul>
+
+<p>
+circuits:
+</p>
+<ul>
+<li class="level1"><div class="li">flèche haute et molette haute vont désormais à 100%</div>
+</li>
+<li class="level1"><div class="li">clavier: enter clavier num réglé pour escape mode</div>
+</li>
+</ul>
+
+<p>
+séquenciel:
+</p>
+<ul>
+<li class="level1"><div class="li">désaffectation des bangs possibles sur toutes les mémoires depuis le séquenciel (position previous, preset et suivantes)</div>
+</li>
+<li class="level1"><div class="li">surlignement en rouge pour affectation midi</div>
+</li>
+</ul>
+
+<p>
+faders:
+</p>
+<ul>
+<li class="level1"><div class="li">en lock: les niveaux issus LFO continuaient à etre actifs malgrè le lock. Lorsqu on lock en desous de 100% le LFO est coupé.</div>
+</li>
+<li class="level1"><div class="li">mode view: lorsqu'un fader est vidé il apparassait toujours dans l'espace circuits.</div>
+</li>
+<li class="level1"><div class="li">banger goback: le goback est désormais actif sur toute la durée du transfert du go</div>
+</li>
+</ul>
+
+<p>
+sauvegardes:
+</p>
+<ul>
+<li class="level1"><div class="li">bug au chargement partiel d une conduite empechant de déplacer la conduite ailleurs après réglé	</div>
+</li>
+<li class="level1"><div class="li">systeme de sauvegarde des fichiers en txt ( sequences_conf, audio_conf, …, etc) </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="section075" id="section075">0.7.5</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> première mise en ligne 29 mars 2010:</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Banger</div>
+</li>
+<li class="level2"><div class="li"> portage des interfaces DMX suivantes:</div>
+</li>
+<li class="level2"><div class="li"> sunlite 8C in+out / USB-DMX512Online.net </div>
+</li>
+<li class="level2"><div class="li"> ajout d'un grand master, pilotable en midi</div>
+</li>
+<li class="level2"><div class="li"> Patch: simplification du patch à la souris / Check dimmers</div>
+</li>
+<li class="level2"><div class="li"> poignée de controle de l'espace  
+faders comporte désormais 2 zones: à gauche traction horizontale , à 
+droite traction verticale.        </div>
+</li>
+<li class="level2"><div class="li"> le IN et OUT simultanné sur 2 enttec
+ pro fonctionne, cependant la version 0.7.6 verra une autre approche de 
+la gestion des Enttec PRO ( trop de latence avec le IN)</div>
+</li>
+<li class="level2"><div class="li"> le clignotement des circuits est 
+désormais est en off. Pour l'activer et voir  si on change de niveau par
+ rapport à la mémoire enregistrée en scène ou en preset il faut clicker 
+[view on change]</div>
+</li>
+</ul>
+
+<p>
+
+Débug:
+-réglé les problèmes d'affichage des temps des dixiemes pour le 
+séquenciel et les masters
+-debugué les boutons stage-+ et preset-+ du séquenciel ( un souci d 
+archives de fichiers a remis en place des bugs corrigés depuis 
+longtemps)
+</p>
+
+</div>
+
+<h4><a name="section074" id="section074">0.7.4</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> première mise en ligne 2 février 2010:</div>
+</li>
+</ul>
+
+<p>
+  optimisation de 80 % du code pour les petites machines
+</p>
+<pre class="code">rajouté saisie intelligente (le plus déselectionne quand un niveau a été attribué)
+debugué import conduite ascii dans le cas de circuits &gt;512 qui écrasait les courbes
+midiIN mute (keyboard ctrl F11)
+</pre>
+
+</div>
+
+<h4><a name="section073" id="section073">0.7.3</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> première mise en ligne 29 décembre:</div>
+</li>
+</ul>
+<pre class="code">  locks preset
+  pilotage des affectations faders midi-do-orders
+  affectation F1 F2 F3 F4 et Time sur le panneau de raccourci des faders
+  fin de debogage du sequenciel à la souris</pre>
+
+</div>
+
+<h4><a name="section072" id="section072">0.7.2</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> debog version 25 décembre:</div>
+</li>
+</ul>
+<pre class="code"> lock depuis behrinhger raffraichissment valeurs
+ sequenciel souris rafraichissement memoire après crossfade
+ elargissement de la zone sensible de la souris pour le Xfade
+ affectation midi de la roue de couleur </pre>
+<ul>
+<li class="level1"><div class="li"> première mise en ligne : 21 décembre 2009</div>
+</li>
+</ul>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <div class="doc">
+        developpement_eng.txt · Dernière modification: 2011/04/22 14:53 par christoph      </div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <form class="button btn_source" method="post" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="edit" type="hidden"><input name="rev" value="" type="hidden"><input name="id" value="developpement_eng" type="hidden"><input value="Afficher le texte source" class="button" accesskey="v" title="Afficher le texte source [V]" type="submit"></div></form>        <form class="button btn_revs" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="revisions" type="hidden"><input name="id" value="developpement_eng" type="hidden"><input value="Anciennes révisions" class="button" accesskey="o" title="Anciennes révisions [O]" type="submit"></div></form>      </div>
+      <div class="bar-right" id="bar__bottomright">
+                                        <form class="button btn_login" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="login" type="hidden"><input name="sectok" value="9c2745b9a0e1587c243f29cd4263b134" type="hidden"><input name="id" value="developpement_eng" type="hidden"><input value="Connexion" class="button" title="Connexion" type="submit"></div></form>        <form class="button btn_index" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="index" type="hidden"><input name="id" value="developpement_eng" type="hidden"><input value="Index" class="button" accesskey="x" title="Index [X]" type="submit"></div></form>        <a class="nolink" href="#dokuwiki__top"><input class="button" value="Haut de page" onclick="window.scrollTo(0, 0)" title="Haut de page" type="button"></a>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+  <div class="license">Sauf mention contraire, le contenu de ce wiki est placé sous la licence suivante:<a href="http://www.gnu.org/licenses/fdl-1.2.html" rel="license" class="urlextern">GNU Free Documentation License 1.2</a></div>
+</div>
+
+<div class="footerinc">
+
+  <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php" title="Recent changes RSS feed"><img src="developpement_eng_fichiers/button-rss.png" alt="Recent changes RSS feed" height="15" width="80"></a>
+
+        <a href="http://www.gnu.org/licenses/fdl-1.2.html" rel="license" title="GNU Free Documentation License 1.2"><img src="developpement_eng_fichiers/gnufdl.png" alt="" height="15" width="80"></a>
+  
+  <a href="http://www.dokuwiki.org/donate" title="Donate"><img src="developpement_eng_fichiers/button-donate.gif" alt="Donate" height="15" width="80"></a>
+
+  <a href="http://www.php.net/" title="Powered by PHP"><img src="developpement_eng_fichiers/button-php.gif" alt="Powered by PHP" height="15" width="80"></a>
+
+  <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="developpement_eng_fichiers/button-xhtml.png" alt="Valid XHTML 1.0" height="15" width="80"></a>
+
+  <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="developpement_eng_fichiers/button-css.png" alt="Valid CSS" height="15" width="80"></a>
+
+  <a href="http://dokuwiki.org/" title="Driven by DokuWiki"><img src="developpement_eng_fichiers/button-dw.png" alt="Driven by DokuWiki" height="15" width="80"></a>
+
+
+
+</div>
+
+<div class="no"><img src="developpement_eng_fichiers/indexer.gif" alt="" height="1" width="1"></div>
+
+
+
+
+</body></html>

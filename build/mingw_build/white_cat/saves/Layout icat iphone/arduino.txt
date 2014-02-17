@@ -1,0 +1,2 @@
+#arguments:COM PORT / BAUDRATE / REQUEST RATE / MAX IO / MAX ANALOG /
+4 / 9600 / 20 / 10 / 6 / 6 /

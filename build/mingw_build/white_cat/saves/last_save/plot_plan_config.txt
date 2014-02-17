@@ -1,0 +1,6 @@
+#arguments: Name_of_the_plan.jpg
+safran_croquis.jpg
+#arguments: position X / position Y / size X / size Y / Orientation / Alpha / Lock proportions / Global Library Size /
+330 / 150 / 1097 / 769 / 0.000000 / 0.630000 / 1 / 0.480000 /
+#arguments: Grid Scale / Plot Window size X / Plot Window size X / Plot Viewport X / Plot Viewport Y / Line Color / Background Color / Number of shapes present / Show shapes id / Grid Type / Alpha Grid / Alpha Shapes / Plan ratio / SoloMode xy relativs /
+75 / 1200 / 750 / 191 / 29 / 0.000000 / 1.560000 / 0 / 0 / 1 / 0.500000 / 1.000000 / 1.426528 / 1 /

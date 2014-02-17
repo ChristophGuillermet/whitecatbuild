@@ -1,0 +1,12 @@
+#arguments: X Y position of windows: Colors / Numeric / Video / Patch /
+1086 294 / 213 0 / 775 0 / 475 79 /
+#arguments:  Save Load Report / Time / Sequenciel /
+197 276 / 0 162 / 624 332 /
+#arguments:   FadersSpace(Y only) / Config window / Confirm Box / MiniSeq / Save Window
+336 / 200 200 / 200 200 /
+#arguments: X Y position of windows: Help Window / Alarm window / Config window / Banger
+314 200 / 20 20 / 30 98 / 100 50 /
+#arguments: X Y position of windows: Wizard window/ Minifaders / List / Chasers
+100 100 / 401 278 / 300 100 / 100 300 / 100 100 /
+#arguments: X Y position of windows: iCatBuilder / Grider / Plot / Main Menu /
+606 37 / 100 100 / 51 40 / 277 530 /

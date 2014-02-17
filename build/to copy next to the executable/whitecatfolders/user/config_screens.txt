@@ -1,0 +1,2 @@
+#arguments: multiplescreen/ borderwindow / fullscreen / largeur_ecran / hauteur_ecran / pos_x / pos_y
+0 0 0 / 1400 1080 / 0 0

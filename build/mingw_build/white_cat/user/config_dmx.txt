@@ -1,0 +1,3 @@
+#arguments: 1st line:  dmxkeyword / 3rd: artnetwith usb ( 0-1) 
+ENTTEC-PRO
+0

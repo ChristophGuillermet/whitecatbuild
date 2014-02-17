@@ -1,0 +1,2154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" dir="ltr" lang="fr"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+
+  <title>configuration_arduino [White Cat lighting board]</title><meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2012-06-22T09:17:03+0200" />
+<meta name="keywords" content="configuration_arduino" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/opensearch.php" title="White Cat lighting board" />
+<link rel="start" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/" />
+<link rel="contents" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=configuration_arduino&amp;do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?do=export_xhtml&amp;id=configuration_arduino" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?do=export_raw&amp;id=configuration_arduino" />
+<link rel="stylesheet" media="all" type="text/css" href="configuration_arduino_fichiers/css_002.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="configuration_arduino_fichiers/css.css" />
+<link rel="stylesheet" media="print" type="text/css" href="configuration_arduino_fichiers/css_003.css" />
+<script type="text/javascript" charset="utf-8" src="configuration_arduino_fichiers/js.php"></script>
+
+  <link rel="shortcut icon" href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/tpl/default/images/favicon.ico" /></head>
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=configuration_arduino&amp;do=backlink" title="Liens vers cette page">configuration_arduino</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php" name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">White Cat lighting board</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_source" method="post" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="edit" type="hidden" /><input name="rev" value="" type="hidden" /><input name="id" value="configuration_arduino" type="hidden" /><input value="Afficher le texte source" class="button" accesskey="v" title="Afficher le texte source [V]" type="submit" /></div></form>        <form class="button btn_revs" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="revisions" type="hidden" /><input name="id" value="configuration_arduino" type="hidden" /><input value="Anciennes révisions" class="button" accesskey="o" title="Anciennes révisions [O]" type="submit" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="recent" type="hidden" /><input name="id" value="configuration_arduino" type="hidden" /><input value="Derniers changements" class="button" accesskey="r" title="Derniers changements [R]" type="submit" /></div></form>        <form action="/whitecat/dokuwiki/doku.php" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input name="do" value="search" type="hidden" /><input id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" type="text" /><input value="Rechercher" class="button" title="Rechercher" type="submit" /><div style="display: none;" id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+        <div class="breadcrumbs">
+      <span class="bchead">Piste:</span> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=save" class="breadcrumbs" title="save">save</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=audio" class="breadcrumbs" title="audio">audio</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=pilotage_audio" class="breadcrumbs" title="pilotage_audio">pilotage_audio</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=icat" class="breadcrumbs" title="icat">icat</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=android" class="breadcrumbs" title="android">android</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=menucfg" class="breadcrumbs" title="menucfg">menucfg</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=configuration_dmx" class="breadcrumbs" title="configuration_dmx">configuration_dmx</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=configuration_affectation_midi" class="breadcrumbs" title="configuration_affectation_midi">configuration_affectation_midi</a> <span class="bcsep">»</span> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=introduction" class="breadcrumbs" title="introduction">introduction</a> <span class="bcsep">»</span> <span class="curid"><a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=configuration_arduino" class="breadcrumbs" title="configuration_arduino">configuration_arduino</a></span>          </div>
+    
+    
+  </div>
+  
+  
+
+
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span style="cursor: pointer;" class="toc_close" id="toc__toggle"><span>−</span></span>Table des matières</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#configuration_arduino" class="toc">Configuration Arduino</a></span></div>
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#qu_est_ce_qu_arduino" class="toc">Qu'est ce qu'Arduino ?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#comment_ca_fonctionne" class="toc">Comment ça fonctionne ?</a></span></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#installer_les_drivers_d_arduino" class="toc">Installer les drivers d'Arduino</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#charger_le_sketch_de_communication_avec_whitecat" class="toc">Charger le sketch de communication avec WhiteCat</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#et_comment_on_fait_maintenant" class="toc">Et comment on fait maintenant ?</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#partie_1" class="toc">Partie 1:</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#partie_2la_fonction_setup" class="toc">Partie 2: la fonction setup()</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#charger_le_sketch_dans_l_arduino" class="toc">Charger le sketch dans l'arduino</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#retour_moniteur" class="toc">Retour moniteur</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#arduino_cfg" class="toc">Arduino CFG</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#configuration_de_la_communication" class="toc">Configuration de la communication</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#affectations_digitales" class="toc">Affectations digitales</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#type_input_ou_pullup" class="toc">Type INPUT ou PULLUP</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#type_output" class="toc">Type OUTPUT</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#type_pwm_ou_servo_ou_hf_out" class="toc">Type PWM ou servo ou HF out</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#affectations_analogiques" class="toc">Affectations analogiques</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#whitecat_et_arduino_le_cadre_d_utilisation" class="toc">WhiteCat et Arduino : le cadre d'utilisation</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#principe_dialogue_whitecat_arduino" class="toc">Principe dialogue WhiteCat / Arduino</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#choisir_entre_whittekitten_l_approche_art-net_l_approche_usb_ou_l_approche_sans_fil_en_rf12" class="toc">Choisir entre WhitteKitten, l'approche Art-Net, l'approche USB, ou l'approche sans fil en RF12</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#l_approche_art-net" class="toc">L'approche Art-Net</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#l_approche_whittekitten" class="toc">L'approche Whittekitten</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#l_approche_usb_traditionelle" class="toc">L'approche USB traditionelle</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#comprehension_du_sketch" class="toc">Compréhension du sketch</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#solutions_sans_fil" class="toc">Solutions sans fil</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#schemas_basiques_et_premiers_pas" class="toc">Schémas basiques et premiers pas</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#shopping_arduino" class="toc">Shopping &amp; Arduino</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="configuration_arduino" id="configuration_arduino">Configuration Arduino&nbsp;</a></h1>
+<div class="level1">
+
+<p>
+<strong>Pour cartes Arduino sous logiciel arduino 0023</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=duemillanove.jpg" class="media" title="duemillanove.jpg"><img src="configuration_arduino_fichiers/fetch_016.jpg" class="media" alt="" /></a>
+</p>
+
+<p>
+<strong>Pour cartes JeeNode, LA solution radio</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=jeenode.jpg" class="media" title="jeenode.jpg"><img src="configuration_arduino_fichiers/fetch_028.jpg" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h3><a name="qu_est_ce_qu_arduino" id="qu_est_ce_qu_arduino">Qu'est ce qu'Arduino ?</a></h3>
+<div class="level3">
+
+<p>
+
+Arduino est un micro-ordinateur pour l'expérimentation électronique. 
+</p>
+
+<p>
+Il possède des entrées et sorties permettant de recevoir et d'émettre: 
+</p>
+<ul>
+<li class="level1"><div class="li"> des signaux ON/OFF: interrupteurs, contacteurs, Leds, relais…</div>
+</li>
+<li class="level1"><div class="li"> des signaux analogiques 
+(potentiomètres, photo-résistances, capteurs de pression, de 
+températures, servo-moteurs, leds graduées ou projos etc…). La réception
+ est analogique, l'émission est en PWM (modulation en largeur 
+d'impulsion).</div>
+</li>
+</ul>
+
+<p>
+
+On peut :
+</p>
+<ul>
+<li class="level1"><div class="li"> lui injecter des programmes que l'on fabrique, que l'on nomme des sketches. Ces sketches sont des “scripts” en langage C.</div>
+</li>
+<li class="level1"><div class="li"> communiquer avec l'ordi via le port USB </div>
+</li>
+<li class="level1"><div class="li"> recevoir des données de sa part</div>
+</li>
+<li class="level1"><div class="li"> piloter des installations électroniques et électriques</div>
+</li>
+</ul>
+
+<p>
+
+On peut aussi le laisser tourner en stand-alone, avec sa propre programmation, sans monopoliser une machine. 
+</p>
+
+<p>
+C'est un projet open-source avec une communauté très active. 
+</p>
+
+<p>
+Le hardware est très économique et ravira ceux d'entre nous qui rêvent 
+de fabriquer leur propre interface physique, une installation 
+multimédia, ou de redonner jeunesse à une ancienne table en 0-10v. Une 
+carte Arduino coûte dans les 25-30 euros, un jeenode au alentour de 20 
+euros. Certains proposent un kit découverte avec potentiomètres, servos,
+ résistances, et plaque d'expérimentation sans soudures (breadboard).
+</p>
+
+<p>
+Pour les utilisateurs férus et qui codent un peu, des démultiplexeurs permettent de créer facilement plus de sorties PWM: <a href="http://www.arduino.cc/playground/Learning/TLC5940" class="urlextern" title="http://www.arduino.cc/playground/Learning/TLC5940" rel="nofollow">http://www.arduino.cc/playground/Learning/TLC5940</a> ou en utilisant la libraire SoftPWM.
+</p>
+
+</div>
+
+<h3><a name="comment_ca_fonctionne" id="comment_ca_fonctionne">Comment ça fonctionne ?</a></h3>
+<div class="level3">
+
+<p>
+
+Ce micro-ordinateur embarque un système interne avec un bootloader, qui 
+comprend tout ce qu'il faut pour interpréter le sketch que vous allez 
+lui injecter.
+</p>
+
+<p>
+Sa vitesse est généralement de 16Mhz. Il s'agit donc d'un tout petit 
+processeur, mais qui permet déjà de gérer pas mal d'instructions.
+</p>
+
+<p>
+Pour interfacer avec lui, il faut le programmer, par une IDE ( environnement de développement ) qui permet d'écrire des sketchs.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_ide.jpg" class="media" title="arduino_ide.jpg"><img src="configuration_arduino_fichiers/fetch_020.jpg" class="mediaright" title=" " alt=" " align="right" /></a>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Soit on apprend son langage ( basé sur le langage C ), et qui est très simple</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Soit on le charge avec le set fourni
+ dans le dossier ressources/arduino/ de whitecat, pour communiquer avec 
+lui depuis WhiteCat. Ce set permet la réception des données issues 
+d'Arduino, et l'écriture vers les ports en output d'Arduino.</div>
+</li>
+</ul>
+
+<p>
+
+Le site du projet arduino: <a href="http://www.arduino.cc/" class="urlextern" title="http://www.arduino.cc" rel="nofollow">http://www.arduino.cc</a>
+</p>
+
+<p>
+La section française: <a href="http://www.arduino.cc/fr/" class="urlextern" title="http://www.arduino.cc/fr/" rel="nofollow">http://www.arduino.cc/fr/</a>
+</p>
+
+<p>
+Le forum en français: <a href="http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?board=francais" class="urlextern" title="http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?board=francais" rel="nofollow">http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?board=francais</a>
+</p>
+
+<p>
+Un post regroupant les tutoriaux en français et autres ressources: <a href="http://arduino.cc/forum/index.php/topic,67624.0.html" class="urlextern" title="http://arduino.cc/forum/index.php/topic,67624.0.html" rel="nofollow">http://arduino.cc/forum/index.php/topic,67624.0.html</a>
+</p>
+
+</div>
+
+<h1><a name="installer_les_drivers_d_arduino" id="installer_les_drivers_d_arduino">Installer les drivers d'Arduino</a></h1>
+<div class="level1">
+
+</div>
+
+<h4><a name="arduino_2009_et_precedentes" id="arduino_2009_et_precedentes">Arduino 2009 et précédentes</a></h4>
+<div class="level4">
+
+<p>
+
+Si vous avez déjà installé les drivers VCOM de la Enttec PRO, vous 
+n'avez pas besoin d'installer les drivers Arduino. 
+La communication se fait en effet par un chipset FTDI, qui simule un 
+port série. C'est la même technologie de communication présente dans les
+ cartes dmx ENTTEC.
+Sinon, installez les drivers comme spécifié ici :<a href="http://arduino.cc/fr/Main/DebuterInstallation" class="urlextern" title="http://arduino.cc/fr/Main/DebuterInstallation" rel="nofollow">http://arduino.cc/fr/Main/DebuterInstallation</a>. Il est d'ailleurs possible de fabriquer une entec opendmx avec une duemilanove.
+</p>
+
+</div>
+
+<h4><a name="arduino_uno" id="arduino_uno">Arduino UNO</a></h4>
+<div class="level4">
+
+<p>
+
+Dans le logiciel Arduino que vous téléchargez, il y a un dossier drivers.
+Pour installer le driver:
+</p>
+<ul>
+<li class="level1"><div class="li"> branchez votre interface</div>
+</li>
+<li class="level1"><div class="li"> click droit sur l'icone Ordinateur de votre bureau</div>
+</li>
+<li class="level1"><div class="li"> Propriétés &gt; gestionnaire de périphériques</div>
+</li>
+<li class="level1"><div class="li"> clickez l'UNO qui s'affiche avec un panneau “attention!”</div>
+</li>
+<li class="level1"><div class="li"> faites une recherche de drivers manuels</div>
+</li>
+<li class="level1"><div class="li"> allez dans le dossier dézippé du logiciel arduino/ drivers </div>
+</li>
+<li class="level1"><div class="li"> lancez l'installation</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="jeenode" id="jeenode">Jeenode</a></h4>
+<div class="level4">
+
+<p>
+
+Il faut faire attention aux versions de Jeenodes utilisées.
+</p>
+
+<p>
+Les Jeenodes V5 et jeelink v2 utilisent le driver FTDI (duemilanove Atmega328). 
+</p>
+
+<p>
+Les Jeenodes v6 et jeelink v3 sont sur base driver UNO (sélectionner carte UNO).
+</p>
+
+</div>
+
+<h1><a name="charger_le_sketch_de_communication_avec_whitecat" id="charger_le_sketch_de_communication_avec_whitecat">Charger le sketch de communication avec WhiteCat</a></h1>
+<div class="level1">
+
+<p>
+
+<em>Attention, si votre interface Enttec est branchée, elle sera elle 
+aussi considérée comme une carte Arduino par l'IDE de programmation. 
+Il est donc recommandé de débrancher votre carte DMX lors du chargement 
+de sketches dans la carte Arduino.
+</em>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Brancher la carte Arduino en USB</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Installer l'IDE d'Arduino 023:</div>
+</li>
+</ul>
+<ol>
+<li class="level1"><div class="li"> Télécharger Arduino et le dézipper à l'endroit de votre choix</div>
+</li>
+<li class="level1"><div class="li"> Copier coller simplement le contenu 
+du dossier whitecat/ressources/arduino/librarie 023 dans le dossier 
+libraries de votre arduino 023.</div>
+</li>
+</ol>
+
+<p>
+Ce sont les librairies additionnelles nécessaires à l'éxécution du 
+sketch pour WhiteCat. Sous UNO et logiciel arduino 0022 et supérieur 
+vous n'avez plus besoin d'installer Wstring.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Sélectionner dans votre IDE la bonne carte et le bon port COM:</div>
+</li>
+</ul>
+<ol>
+<li class="level1"><div class="li"> Ouvrir l'IDE ARDUINO que vous avez téléchargé sur le site Arduino.</div>
+</li>
+<li class="level1"><div class="li"> Onglet Tools &gt; Board &gt; Sélectionnez votre carte et son processeur</div>
+</li>
+</ol>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_board_choice.jpg" class="media" title="arduino_board_choice.jpg"><img src="configuration_arduino_fichiers/fetch_019.jpg" class="media" title="arduino_board_choice.jpg" alt="arduino_board_choice.jpg" /></a>
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Onglet Tools &gt; Serial Port  et 
+noter quel est le port COM détecté. Ce port COM est attribué de manière 
+stable par windows à votre interface Arduino. Il doit être inférieur à 
+10. Si ce n'est pas le cas regarder la page sur le wiki <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=clean_ports_com" class="urlextern" title="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=clean_ports_com" rel="nofollow">http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/doku.php?id=clean_ports_com</a> pour voir la demarche dans XP pour nettoyer les port COM.</div>
+</li>
+</ol>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_detect_com.jpg" class="media" title="arduino_detect_com.jpg"><img src="configuration_arduino_fichiers/fetch_006.jpg" class="media" title="arduino_detect_com.jpg" alt="arduino_detect_com.jpg" /></a>
+ 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Charger le sketch pour communiquer avec WhiteCat dans Arduino</div>
+</li>
+</ul>
+<ol>
+<li class="level1"><div class="li"> Aller dans FILE</div>
+</li>
+<li class="level1"><div class="li"> Clicker OPEN</div>
+</li>
+<li class="level1"><div class="li"> Si vous ne voulez pas faire de code,
+ chercher dans le dossier WhiteCat le dossier 
+Ressources/Arduino/Whitekitten et  sélectionner un sketch dans le 
+dossier. Ils sont détaillés dans la suite du wiki. </div>
+</li>
+<li class="level1"><div class="li"> sinon sélectionner 
+whitecat_arduino_default_022.pde. ( par défaut, ce sketch est basé sur 
+la communication avec une carte Arduino de base: 13 entrées digitales, 6
+ analogiques, à une vitesse de 9600 bauds) et éditer le sketch comme 
+détailler à l'approche USB.</div>
+</li>
+<li class="level1"><div class="li"> clicker l'icône Upload en haut à droite pour charger le sketch dans votre carte Arduino</div>
+</li>
+</ol>
+
+<p>
+
+Cette manipulation est nécessaire qu'une seule fois, pour charger dans 
+votre Arduino toute neuve le sketch de communication avec WhiteCat.
+Si vous désirez ajouter du code, ou changer des paramètres dans le 
+sketch, il faudra modifier le code du sketch fourni, et charger ces 
+modifications dans Arduino.
+</p>
+
+</div>
+
+<h2><a name="et_comment_on_fait_maintenant" id="et_comment_on_fait_maintenant">Et comment on fait maintenant ?</a></h2>
+<div class="level2">
+
+<p>
+
+Il faut d'abord définir votre utilisation d'arduino:
+</p>
+
+<p>
+-combien de boutons on-off en entrée et lesquels
+-combien de sorties on-off, et lesquelles
+-combien de sorties PWM, et lesquelles
+-servomoteur, HF?
+-combien d'entrées analogiques
+</p>
+
+<p>
+A partir de ce cahier des charges, vous pouvez paramétrer le script avant de le charger dans arduino:
+Autant vous faire un  petit schéma, un diagramme, de façon à avoir une vision globale.
+</p>
+
+<p>
+Avant de customiser le sketch, sauvez le sous un autre nom. vous conserverez le script original intact.
+</p>
+
+<p>
+*Lors de l'édition du sketch,  assurez vous de ne pas faire disparaitre 
+des accolades ou des ponctuations ( les point-virgules notamment).* 
+</p>
+
+<p>
+Ce genre de petites erreurs empêchera la compilation et le chargement de
+ votre script. Vous pouvez vérifier la syntaxe dans le menu 
+Sketch&gt;Verify/Compile
+</p>
+
+</div>
+
+<h3><a name="partie_1" id="partie_1">Partie 1:</a></h3>
+<div class="level3">
+
+<p>
+
+Editer dans le sketch BAUDRATE, threshold_analog, LastI/O, NB_DIGITAL et NBR_ANALOG
+</p>
+
+</div>
+
+<h4><a name="baudrate" id="baudrate">BAUDRATE.</a></h4>
+<div class="level4">
+
+<p>
+Baudrate: la vitesse de transmission
+vous vérifierez que le BAUDRATE correspond aux spécifications que nous 
+avons vu plus haut ( nombre de bytes transmis etc) et que les valeurs 
+sont identiques dans WhiteCat et dans votre sketch.
+Le Baudrate est d'une valeur de 300, 1200, 2400, 4800, 9600, 14400, 
+19200, 28800, 38400, 57600, ou 115200.
+</p>
+
+<p>
+La valeur utilisée dans la communication entre WhiteCat et l'arduino est généralement à 9600 bauds.
+Pour Whittekitten elle a été élevée à 14400 bauds/seconde.
+</p>
+
+</div>
+
+<h4><a name="threshold_analog" id="threshold_analog">threshold_analog</a></h4>
+<div class="level4">
+
+<p>
+
+Si vous ne filtrez pas physiquement avec un condensateur et une 
+résistance le signal venant des analogues IN,  il est possible  que ce 
+dernier fluctue en continu.
+Une variable permet de temporiser ces sautes de valeur. 
+</p>
+
+<p>
+int threshold_analog=0;  mettre 1 ou 2
+</p>
+
+<p>
+Cette solution réduit la sensibité des valeurs analogiques. Si vous 
+mettez 1 vous aurez une sensibilté équivalent au midi ( 0-127). Si vous 
+mettez 2 elle serez deux fois moindre ( 0-63).
+On préfèrera donc atténuer ces variations dues à la nature des capteurs,
+ par une solution électronique ( voir schémas en fin de page).
+</p>
+
+</div>
+
+<h4><a name="last_i_o" id="last_i_o">Last I/O</a></h4>
+<div class="level4">
+
+<p>
+correspond au nombre de canaux émis de whitecat vers l'arduino. Il peux 
+être supérieur au nombre de pins de votre arduino pour le cas où vous 
+voudriez par exemple contrôler plusieurs cartes en HF. Le maximum à été 
+définit à 54 canaux pour des questions de capacité de transmission en HF
+ et avec la mega.
+</p>
+
+</div>
+
+<h4><a name="nbr_analog" id="nbr_analog">NBR_ANALOG</a></h4>
+<div class="level4">
+
+<p>
+
+NBR_ANALOG: le numéro de la dernière entrées analogiques que vous utilisez sur votre carte. 
+</p>
+
+<p>
+Si par exemple vous utilisez les 3 premières entrées analogiques, il faudra renseigner NBR_ANALOG=2; 
+La lecture des instructions du code se fera jusqu'au port 2 ( 0-1-2).
+Si vous utilisez 6 entrées, la lecture des instructions du code se fera jusqu'au port 5 (0-1-2-3-4-5 font bien 6).
+</p>
+
+</div>
+
+<h4><a name="nbr_digital" id="nbr_digital">NBR_DIGITAL</a></h4>
+<div class="level4">
+
+<p>
+
+NBR_DIGITAL: le numéro de la dernière IO digitales que comprend votre carte. 
+</p>
+
+<p>
+Par exemple l'arduino Mega en a 54, la UNO 13.
+Si vous paramétrez 7, la lecture des instructions du code ( lire On/Off 
+et  écrire On/Off / PWM) se fera jusqu'à la pin 7 (0-1-2-3-4-5-6-7 = 8 
+ports).
+</p>
+
+</div>
+
+<h3><a name="partie_2la_fonction_setup" id="partie_2la_fonction_setup">Partie 2: la fonction setup()</a></h3>
+<div class="level3">
+
+<p>
+
+Si vous n'utiliser pas whitekitten le setup ce ferra dans le code.
+L'initialisation se fait par trois tableaux différents, où l'on renseignera la pin par une valeur de 0 ou 1.
+Les tableaux digital_is_output[],  allow_pwm_write[] et allow_analog_read[].
+</p>
+
+<p>
+Si vous regardez votre carte, vous pouvez voir les entrées sorties numérotées à partir de 0.
+Ce sont ces coordonnées qui vous renseignent donc physiquement sur l'ordonnée à éditer.
+digital_is_output[4] est donc la pin 4 en IO
+allow_analog_read[2] est donc la pin 2 en entrée analogique.
+</p>
+
+</div>
+
+<h4><a name="initialisation_des_pins_on_off_et_pwm" id="initialisation_des_pins_on_off_et_pwm">Initialisation des pins ON/OFF et pwm.</a></h4>
+<div class="level4">
+
+<p>
+
+Les entrées sorties On/Off sont un peu particulières.
+</p>
+
+<p>
+Les pins 0 et 1 sont réservées à discussion port série hardware avec 
+d'autres équipements. 
+On ne s'en occupera donc pas. Elles affichent réception et émission de 
+data. Elles sont bypassées dans WhiteCat ainsi que dans ce sketch.
+</p>
+
+<p>
+On peut paramétrer une pin pour être IN ou OUT.
+</p>
+
+<p>
+Concernant le OUT, il peut être de 2 types: ON/OFF, ou PWM ( graduation en modulation de fréquence).
+</p>
+
+<p>
+Il faut donc éditer 
+
+</p>
+<pre class="code">    digital_is_output[numéro de pin]= 0; //si c'est une entrée<br />    digital_is_output[numéro de pin]= 1; //si c'est une sortie (On/Off ou PWM)</pre>
+
+<p>
+
+Certaines pins ( indiquées PWM ou * sur la carte) autorisent une sortie PWM . 
+Pour les configurer avec un comportement PWM ( cad pouvant varier de 0 à 255), il faudra donc éditer:
+
+</p>
+<pre class="code">   allow_pwm_write[numéro de pin]=1; // si le PWM est activé la sortie n'est pas de type On/Off<br />   allow_pwm_write[numéro de pin]=0; // la sortie est On/Off </pre>
+
+<p>
+
+Rappelez vous que si la valeur NBR_DIGITAL est 9 , vous n'aurez jamais accès aux pins 8 10 11 12 13.
+9 max autorise les 9 pins 0 1 2 3 4 5  6 7 et 8.
+</p>
+
+</div>
+
+<h4><a name="autorisation_de_lecture_des_analogues" id="autorisation_de_lecture_des_analogues">Autorisation de lecture des Analogues:</a></h4>
+<div class="level4">
+
+<p>
+
+La lecture des analogues est autorisée dans ce tableau, en mettant 1 pour chaque valeur autorisée.
+
+</p>
+<pre class="code">  allow_analog_read[2]=1; //la lecture de la pin analog  2 est activée</pre>
+
+<p>
+
+Rappelez vous que si la valeur NBR_ANALOG est 3, vous n'aurez jamais 
+accès aux pins 3 4 5. Vous accéderez aux trois premières pins: 0 1 et 2.
+</p>
+
+</div>
+
+<h2><a name="charger_le_sketch_dans_l_arduino" id="charger_le_sketch_dans_l_arduino">Charger le sketch dans l'arduino</a></h2>
+<div class="level2">
+
+<p>
+
+Clicker la flèche dans les menus haut.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_loadsketch.jpg" class="media" title="arduino_loadsketch.jpg"><img src="configuration_arduino_fichiers/fetch_003.jpg" class="media" title="arduino_loadsketch.jpg" alt="arduino_loadsketch.jpg" /></a>
+</p>
+
+<p>
+Si il y a un problème de syntaxe dans le programme, ou de communication 
+avec l'arduino, le debuggeur affiche les données en rouge:
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_debuger.jpg" class="media" title="arduino_debuger.jpg"><img src="configuration_arduino_fichiers/fetch_009.jpg" class="media" title="arduino_debuger.jpg" alt="arduino_debuger.jpg" /></a>
+</p>
+
+</div>
+
+<h1><a name="retour_moniteur" id="retour_moniteur">Retour moniteur</a></h1>
+<div class="level1">
+
+<p>
+ 
+Si vous désirez surveiller les émissions série de l'arduino, vous pouvez
+ activer le moniteur ( la sorte de TV avec un rond) dans le menu haut.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_serialmonitor.jpg" class="media" title="arduino_serialmonitor.jpg"><img src="configuration_arduino_fichiers/fetch_011.jpg" class="media" title="arduino_serialmonitor.jpg" alt="arduino_serialmonitor.jpg" /></a>
+</p>
+
+</div>
+
+<h1><a name="arduino_cfg" id="arduino_cfg">Arduino CFG</a></h1>
+<div class="level1">
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduinomain.jpg" class="media" title="arduinomain.jpg"><img src="configuration_arduino_fichiers/fetch_030.jpg" class="media" alt="" /></a>
+
+</p>
+
+</div>
+
+<h2><a name="configuration_de_la_communication" id="configuration_de_la_communication">Configuration de la communication</a></h2>
+<div class="level2">
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_configuration.jpg" class="media" title="arduino_configuration.jpg"><img src="configuration_arduino_fichiers/fetch_027.jpg" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h4><a name="port_com" id="port_com">PORT COM</a></h4>
+<div class="level4">
+
+<p>
+
+C'est le port série virtuel de communication avec Arduino, que vous avez noté dans le point 3 ci dessus.
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Taper le numéro de port COM ( par ex 4 )</div>
+</li>
+<li class="level1"><div class="li"> clicker la case</div>
+</li>
+</ol>
+
+<p>
+
+C'est sur ce port que WhiteCat va aller se brancher.
+</p>
+
+</div>
+
+<h4><a name="baud-rate" id="baud-rate">BAUD-RATE</a></h4>
+<div class="level4">
+
+<p>
+
+Le débit en bauds/seconde.
+Par défaut il est prévu pour fonctionner avec une Duemilanove, à 9600 bauds.
+</p>
+
+<p>
+Cependant si vous désirez plus que 13 IO et 6 analogiques, et passer sur
+ une Méga ( 54 IO, 14 analogiques), il faudra changer le débit fonction 
+de vos besoins.
+</p>
+
+<p>
+Il doit<strong> impérativement être le même dans WhiteCat et dans le sketch Arduino</strong>.
+</p>
+
+<p>
+Le débit doit être calculé ainsi:
+Dans la communication, on transmet des caractères ( valeur 0-255) à Arduino, et vice-versa.
+Chaque caractère est égal à 10 bits  (un start, 8 bits, un stop)
+</p>
+
+<p>
+Il faut donc prendre <strong>la valeur maximum d'envoi</strong>, par exemple dans le cas de la Méga, 54 bytes.
+</p>
+
+<p>
+Ajouter 3 bytes qui sont le mot clé identifiant la salve, avec une 1 byte pour cloturer:
+(3+54+1)*10*cadence d'envoi par secondes.
+</p>
+
+<p>
+Si on veut rafraichir les infos de manière très fluide, au 50ème de secondes: (3+54+1)*10*50= 29 000 bauds minimum.
+On choisira d'arrondir le baud-rate sur une <strong>valeur multiple de 8</strong>: 32 000.
+</p>
+
+<p>
+Pour changer le débit en bauds:
+</p>
+
+<p>
+dans WhiteCat:
+</p>
+<ol>
+<li class="level1"><div class="li"> taper la valeur </div>
+</li>
+<li class="level1"><div class="li"> clicker la case du débit. La connexion avec Arduino sera initialisée.</div>
+</li>
+</ol>
+
+<p>
+
+dans Arduino:
+</p>
+<ol>
+<li class="level1"><div class="li"> dans l'IDE d'Arduino, éditer le sketch: changer la valeur dans<em> const int BAUDRATE=96000;</em> </div>
+</li>
+<li class="level1"><div class="li"> charger le sketch dans Arduino et lancer WhiteCat</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a name="request-rate" id="request-rate">REQUEST-RATE</a></h4>
+<div class="level4">
+
+<p>
+C'est la valeur de rafraichissement des données entrantes/sortantes entre WhiteCat et Arduino.
+</p>
+
+<p>
+Le processus se fait ainsi:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> WhiteCat envoi le mot clé “SD/” (Send Data) à Arduino tous les “X”èmes de secondes définis.</div>
+</li>
+<li class="level1"><div class="li"> A cette requête Arduino envoi les datas directement.</div>
+</li>
+<li class="level1"><div class="li"> Puis WhiteCat envoie les valeurs à écrire sur les ports en sortie d'Arduino.</div>
+</li>
+<li class="level1"><div class="li"> Le buffer série dans Arduino et dans WhiteCat est nettoyé.</div>
+</li>
+</ol>
+
+<p>
+
+WhiteCat procède à ces salves tous les millièmes de secondes définis: 50= 50 millièmes, 100= 100 millièmes.
+Plus la valeur est petite, plus la sollicitation est rapide.
+</p>
+
+</div>
+
+<h4><a name="max_i_o" id="max_i_o">MAX I/O</a></h4>
+<div class="level4">
+
+<p>
+
+C'est le nombre maximum de pins I/O dans whitecat. 
+Il peut être supérieur au nombre de pins disponible sur l'arduino. Max 
+54.
+Vous pouvez par exemple si vous utiliser le HF RF12 indiquer un nombre 
+supérieur au nombre de pins sur votre arduino, afin d'envoyer plus de 
+canaux HF et de pouvoir connecter plusieurs jeenodes en simultanés. Ou 
+pour utiliser un multiplexeur.
+</p>
+
+</div>
+
+<h4><a name="last_analog" id="last_analog">Last ANALOG</a></h4>
+<div class="level4">
+
+<p>
+
+Le nombre maximum d'entrées analogiques dans la carte arduino. Indiquer 
+le numéro de la dernière pin analogique (ex: sur une duemilanove 5). Ces
+ entrées peuvent être tous les capteurs que vous voulez: giroscopiques, 
+potentiomètres, cellules photo-électiques, etc….
+<strong>Veuillez à ne pas dépasser le nombres de pins de la carte.</strong>
+</p>
+
+</div>
+
+<h4><a name="digital" id="digital">DIGITAL</a></h4>
+<div class="level4">
+
+<p>
+C'est le numéro de la dernière pin digitale (ex: duemilanove = 13).
+Sur la Duemilanove il y a 14 pins d'entrée sortie de 0 à 13. 
+</p>
+
+<p>
+Les deux premières sont réservées à la communication hardware ( port 
+série ). Elles ne sont pas éditables.
+Vous pouvez mettre des LEDS pour visualiser la communication sur ces 
+deux pins (0= RX et 1= TX ). nVous pouvez utiliser les pins I/O:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> soit comme des entrées ( interrupteurs).</div>
+</li>
+<li class="level1"><div class="li"> soit comme des sorties digitales: Leds, contacteurs, relais, etc.</div>
+</li>
+</ul>
+
+<p>
+Attention à la puissance: il y a 20 mA par pin (vérifier les 
+spécifications de votre carte). C'est suffisant pour une LED, mais dans 
+le cas de montages gourmands en puissance il faudra passer par un 
+MOSFET, de façon à ne pas griller la carte.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> soit comme sortie de commande en 
+modulation à largeur d'impulsion (PWM: pulse with modulation), c'est à 
+dire graduer de 0 à 5V sur 255 valeurs:</div>
+</li>
+</ul>
+
+<p>
+Par default, sur ces 12 pins restantes, seul 6 peuvent en effet être 
+affectées en PWM (écris PWM à coté de la pin). 
+Nous verons plus tard dans le tuto sur Whitekittent, comment contourner 
+cette limitation et utiliser toutes les pins en PWM grâce à la libraire 
+PWM.
+La sortie I/O de la pin va être plus ou moins stimulée en largeur 
+d'impulsion par le micro controlleur. 
+</p>
+
+<p>
+* soit pour commander la position d'un servomoteur
+(pour les autres type de moteurs vous aurez une éléctronique supplémentaire (pont en H etc…)).
+Voir le site arduino pour les montages. 
+Le PWM prend une valeur de 0 à 255.
+</p>
+
+<p>
+* soit en HF (voir whitekitten) 
+Le PWM prend une valeur de 0 à 255.
+</p>
+
+<p>
+Précautions: Arduino utilisé comme Input fonctionne sans souci sur 
+l'alimentation du port USB. Si vous êtes amenés à l'utiliser en Output 
+avec besoin d'un peu de puissance, vous devrez l'alimenter en 9v. La 
+carte est prévue pour fonctionner en USB ET avec une alimentation 
+externe.
+</p>
+
+</div>
+
+<h4><a name="open" id="open">OPEN</a></h4>
+<div class="level4">
+
+<p>
+
+L'état de la carte, et la possibilité de fermer la connexion série ou de la réouvrir.
+</p>
+
+</div>
+
+<h4><a name="send_config" id="send_config">SEND CONFIG</a></h4>
+<div class="level4">
+
+<p>
+
+Uniquement pour Whitekitten : Envoi la configuration des entrées sorties de Whitecat vers l'Arduino
+</p>
+
+</div>
+
+<h2><a name="affectations_digitales" id="affectations_digitales">Affectations digitales</a></h2>
+<div class="level2">
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_dig.jpg" class="media" title="arduino_dig.jpg"><img src="configuration_arduino_fichiers/fetch_026.jpg" class="mediaright" title=" " alt=" " align="right" /></a>
+</p>
+
+<p>
+Les deux premières Pins ne sont pas éditables.
+</p>
+
+<p>
+En clickant le numéro de pin vous changez son type:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Input: ce pin reçoit des boutons et contacteurs On/Off</div>
+</li>
+<li class="level1"><div class="li"> Pull up (avec Whitekitten): ce pin 
+est un INPUT digital mais avec une résistance relier en interne au +5V. 
+Vous pouvez donc relier la pin directement à la masse (Gnd) pour fermer 
+l'interrupteur. Cela simplifie le montage électronique.</div>
+</li>
+<li class="level1"><div class="li"> Output: ce pin émet des données On/Off 0V/+5V</div>
+</li>
+<li class="level1"><div class="li"> PWM: ce pin est utilisé pour graduer
+ des leds, projo avec le montage mini grada de Jacques Bouault 
+(détailler à la fin du wiki) etc… en modulation à largeur d'impulsion</div>
+</li>
+<li class="level1"><div class="li"> Servo: ce pin peut être branché à un
+ servomoteur, il est préférable d'alimenter le servo depuis une 
+alimentation externe (9-12v) avec un régulateur de tension 7805 pour le 
+passer en 5V.</div>
+</li>
+<li class="level1"><div class="li"> HF out: le jeelink ou jeenode va 
+émettre en sans fil les valeurs de 0 à 255 sur ce canal HF (ex: la pin 2
+ dans whitecat est configurer en HF, on retrouvera la valeur sur le 
+récepteur jeenode dans la variable RF12_data[2]).</div>
+</li>
+</ul>
+
+<p>
+
+En clickant la deuxième case, vous éditez l'action à exécuter dans WhiteCat.
+ 
+La troisième petite case sert à rentrer un paramètre à cette action:
+</p>
+<ol>
+<li class="level1"><div class="li"> taper la valeur</div>
+</li>
+<li class="level1"><div class="li"> clicker la case de paramètre.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a name="type_input_ou_pullup" id="type_input_ou_pullup">Type INPUT ou PULLUP</a></h3>
+<div class="level3">
+
+<p>
+
+En rouge, la valeur I/O reçue d'Arduino.
+</p>
+
+</div>
+
+<h5><a name="faders" id="faders">Faders:</a></h5>
+<div class="level5">
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> Commande         </th><th class="col1 leftalign"> Valeur            </th><th class="col2 leftalign"> Description                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Fader:UP   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton du LFO UP      </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Fader:DOWN   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton du LFO DOW      </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Fader:SAW  </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton du LFO SAW      </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Fader:ToPREVDock  </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton pour aller au dock précédent en mode loop     </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> Fader:ToNEXTDock   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton pour aller au dock suivant en mode loop        </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> Fader:Up/Down   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton pour faire aller-retour en mode PREV/NEXT dock    </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> Fader:LOCK   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton du LOCK      </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> Fader:FLASH   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Bouton du FLASH     </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> Fader:All at 0   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Niveau, Vitesse, Loops et Mouvement à 0    </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> Fader:L/Unloop dock   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 leftalign"> Mise en boucle ou pas du dock    </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> Fader:L/Unloop all   </td><td class="col1 leftalign"> 1-48  </td><td class="col2 centeralign">  Mise en boucle ou pas de tous les docks     </td>
+	</tr>
+</tbody></table>
+
+</div>
+
+<h5><a name="sequenciel" id="sequenciel">Séquenciel:</a></h5>
+<div class="level5">
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> Commande         </th><th class="col1 leftalign"> Valeur            </th><th class="col2 leftalign"> Description                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Seq: GO  </td><td class="col1"> - </td><td class="col2 leftalign"> GO     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Seq: GO BACK  </td><td class="col1"> - </td><td class="col2 leftalign"> GO BACK    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Seq: JUMP  </td><td class="col1"> - </td><td class="col2 leftalign"> JUMP     </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Seq: SHIFT-W  </td><td class="col1"> - </td><td class="col2 leftalign"> Reculer d'une mémoire en preset     </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> Seq: SHIFT-X  </td><td class="col1"> - </td><td class="col2 leftalign"> Avancer d'une mémoire en preset     </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> BANG ! </td><td class="col1"> num banger </td><td class="col2"> Déclencher le banger Val1 </td>
+	</tr>
+</tbody></table>
+
+</div>
+
+<h5><a name="midi" id="midi">Midi:</a></h5>
+<div class="level5">
+
+<p>
+
+Une façon d'utiliser ce menu est de tricher avec le midi.
+</p>
+
+<p>
+En effet, vous voyez ci dessus les commandes qui ont l'air le plus évidentes. 
+</p>
+
+<p>
+Si vous désirez attribuer à une commande On/Off d'autres actions et que 
+celles-ci sont paramétrables en midi, vous pouvez utilisez la simulation
+ Midi, puis configuer l'action via le panneau BUTTONS CONFIG dans [midi 
+cfg]:
+
+</p>
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> Commande         </th><th class="col1 leftalign"> Valeur            </th><th class="col2 leftalign"> Description                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> As Key-On CH0 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 0: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> As Key-On CH1 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 1: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> As Key-On CH2 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 2: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> As Key-On CH3 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 3: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> As Key-On CH4 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 4: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> As Key-On CH5 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 5: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> As Key-On CH6 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 6: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> As Key-On CH7 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 7: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> As Key-On CH8 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 8: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> As Key-On CH9 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 9: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> As Key-On CH10 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 10: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> As Key-On CH11 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 11: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> As Key-On CH12 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 12: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> As Key-On CH13 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 13: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> As Key-On CH14 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 14: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> As Key-On CH15 Pitch:  </td><td class="col1"> 0-127 </td><td class="col2 leftalign"> CH Midi 15: Comportement Key-On avec une valeur 127 puis relachement en Key-Off    </td>
+	</tr>
+</tbody></table>
+
+</div>
+
+<h3><a name="type_output" id="type_output">Type OUTPUT</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Channel &gt; 10 </div>
+</li>
+</ul>
+<pre class="code">L'état des output est conditionné par la valeur d'un circuit dans le buffer mergé résultant du séquenciel et des faders, hors action du Grand Master, et hors patch.</pre>
+
+<p>
+Si ce circuit est &gt; à 10, l'état écrit sur la sortie Arduino est ON.
+Si ce circuit est inférieur ou égal à 10, l'état écrit sur la sortie Arduino est OFF.
+</p>
+
+<p>
+Le paramètre est le numéro de circuit ( de 1 à 512).
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Fader &gt; 10</div>
+</li>
+</ul>
+
+<p>
+
+La même chose mais par rapport à l'état d'un fader. Aucun rapport avec les circuits. Les docks ne sont pas concernés.
+</p>
+
+<p>
+Le paramètre est le numéro du fader ( de 1 à 48).
+</p>
+
+<p>
+
+<strong>Attention:</strong>
+</p>
+
+<p>
+l'envoi de datas de whitecat vers Arduino est conditionné par un changement d'état dans WhiteCat.
+</p>
+
+<p>
+Par ex. si vous pilotez depuis un circuit en On/Off, WhiteCat va stocker
+ l'état précédent du circuit avant lecture , et le comparer à l'état 
+actuel.
+L'envoi vers Arduino est fait uniquement si il y a une différence: un 
+circuit à 11% ne déclenchera rien, sauf si précédemment il était  
+inférieur ou égal à de 10%. Par exemple, à l'ouverture de WhiteCat, je 
+suis sur une mémoire où ce circuit est à 11%. Rien ne se passe.
+</p>
+
+<p>
+Ceci est voulu pour plusieurs raisons: 
+</p>
+<ol>
+<li class="level1"><div class="li"> éviter de surcharger le port série d'envois</div>
+</li>
+<li class="level1"><div class="li"> éviter à l'ouverture de WhiteCat 
+d'enclencher un électro aimant parceque vous n'êtes pas sur la bonne 
+mémoire ( des fois que vous ayez laissé la connexion Arduino directement
+ à l'ouverture dans le [General CFG] ( On Open))</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a name="type_pwm_ou_servo_ou_hf_out" id="type_pwm_ou_servo_ou_hf_out">Type PWM ou servo ou HF out</a></h3>
+<div class="level3">
+
+<p>
+
+La même chose. Les valeur PWM suivent la valeur d'un circuit ou bien la valeur d'un fader.
+</p>
+
+</div>
+
+<h2><a name="affectations_analogiques" id="affectations_analogiques">Affectations analogiques</a></h2>
+<div class="level2">
+
+<p>
+Les entrées analogique de l'arduino sont noté sur la carte (ex:A0-A5). 
+Ces entrées sont des convertisseur A/N 10 bits qui permette de traduire 
+une tension entre 0 et 5V sur une échelle de 0 à 255. Ces entrées 
+correspondent au pins 14 à 19 d'une arduino duemilanove (13+6). On les 
+utilises pour voir la valeur d'un potentiomètre, d'un capteur, etc…
+</p>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_ana.jpg" class="media" title="arduino_ana.jpg"><img src="configuration_arduino_fichiers/fetch_022.jpg" class="mediaright" title=" " alt=" " align="right" /></a>
+</p>
+
+<p>
+Ce menu est plus simple, puisqu'ici on ne fait que configurer à quoi sert le signal analogique reçu.
+
+</p>
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> Commande         </th><th class="col1 leftalign"> Valeur            </th><th class="col2 leftalign"> Description                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Fader Level:  </td><td class="col1"> 1-48 </td><td class="col2 leftalign"> Le niveau du fader    </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Fader Speed:  </td><td class="col1"> 1-48 </td><td class="col2 leftalign"> La vitesse de l'accéléromètre du fader    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Master:  </td><td class="col1"> - </td><td class="col2 leftalign"> Le grand master  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Sequence:  </td><td class="col1"> 1-3 </td><td class="col2 leftalign"> Le niveau du Stage (1) du Preset(2) et de l'accéléromètre(3)    </td>
+	</tr>
+</tbody></table>
+
+<p>
+
+Comme pour les entrées digitales, on peut tricher grâce au midi et 
+router vers d'autres affectations via le panneau FADERS CONFIG dans 
+[midi cfg]:
+
+</p>
+<table class="inline">
+	<tbody><tr class="row0">
+		<th class="col0 leftalign"> Commande         </th><th class="col1 leftalign"> Valeur            </th><th class="col2 leftalign"> Description                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> As CC CH0 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 0: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> As CC CH1 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 1: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> As CC CH2 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 2: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> As CC CH3 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 3: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> As CC CH4 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 4: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> As CC CH5 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 5: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> As CC CH6 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 6: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> As CC CH7 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 7: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> As CC CH8 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 8: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> As CC CH9 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 9: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> As CC CH10 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 10: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> As CC CH11 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 11: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> As CC CH12 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 12: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> As CC CH13 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 13: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> As CC CH14 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 14: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> As CC CH15 Pitch;  </td><td class="col1"> 1-127 </td><td class="col2"> CH Midi 15: Signal Ctrl-Change d'un pitch égal à la valeur </td>
+	</tr>
+</tbody></table>
+
+</div>
+
+<h3><a name="whitecat_et_arduino_le_cadre_d_utilisation" id="whitecat_et_arduino_le_cadre_d_utilisation">WhiteCat et Arduino : le cadre d'utilisation</a></h3>
+<div class="level3">
+
+<p>
+
+<strong>Arduino peut être connecté à WhiteCat de trois manières:</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> par câble USB</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> par l'ajout d'une platine  Ethernet Shield, ou l'utilisation d'une arduino ethernet, pour communiquer en  Art-Net.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> en radio fréquence avec un émetteur sans fil USB (jeelink) et un recepteur sans fil (jeenode).</div>
+</li>
+</ul>
+
+<p>
+
+Arduino est un outil tellement riche, qu'il est impossible de définir complètement un projet arrété.
+</p>
+
+<p>
+
+L'usage d'Arduino va varier fonction de chaque utilisateur, et de son projet.
+</p>
+
+</div>
+
+<h2><a name="principe_dialogue_whitecat_arduino" id="principe_dialogue_whitecat_arduino">Principe dialogue WhiteCat / Arduino</a></h2>
+<div class="level2">
+
+<p>
+
+Le dialogue se fait par l'envoi de messages composé d'un mot clé 
+d'identification ( header) '“DO/”, “SD/”,….) puis de données en bytes, 
+puis d'un mot clé de terminaison de message (“ED/”, comme End Data).
+C'est donc une communication à deux sens.
+</p>
+
+<p>
+
+<strong>Fonction du RequestRate, WhiteCat solilicite l'envoi des données auprès d'Arduino:</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_protocole_sd.jpg" class="media" title="arduino_protocole_sd.jpg"><img src="configuration_arduino_fichiers/fetch_033.jpg" class="media" alt="" /></a>
+</p>
+
+<p>
+<strong>A réception de cette requête, Arduino renvoie 2 messages, l'un 
+pour dire à WhiteCat quels sont les états de ses ON/OFF, l'autre pour 
+lui dire quel est l'état des analogiques:</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_protocole_dg.jpg" class="media" title="arduino_protocole_dg.jpg"><img src="configuration_arduino_fichiers/fetch_007.jpg" class="media" alt="" /></a>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_protocole_an.jpg" class="media" title="arduino_protocole_an.jpg"><img src="configuration_arduino_fichiers/fetch_024.jpg" class="media" alt="" /></a>
+</p>
+
+<p>
+<strong>Enfin, WhiteCat envoie les données d'écriture sur le port Arduino, en I/O et PWM:</strong>
+</p>
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_protocole_do.jpg" class="media" title="arduino_protocole_do.jpg"><img src="configuration_arduino_fichiers/fetch_018.jpg" class="media" alt="" /></a>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_protocole_pw.jpg" class="media" title="arduino_protocole_pw.jpg"><img src="configuration_arduino_fichiers/fetch_017.jpg" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h1><a name="choisir_entre_whittekitten_l_approche_art-net_l_approche_usb_ou_l_approche_sans_fil_en_rf12" id="choisir_entre_whittekitten_l_approche_art-net_l_approche_usb_ou_l_approche_sans_fil_en_rf12">Choisir entre WhitteKitten, l'approche Art-Net, l'approche USB, ou l'approche sans fil en RF12</a></h1>
+<div class="level1">
+
+<p>
+
+Fonction de votre projet, et de ce que vous acceptez comme degré de complexité à mettre en oeuvre, vous avez quatre approches:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> l'approche Art-Net</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> l'approche Whittekitten, l'arduino sans programmation. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> l'approche USB</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> l'approche HF avec Whitekitten.</div>
+</li>
+</ul>
+
+</div>
+
+<h1><a name="l_approche_art-net" id="l_approche_art-net">L'approche Art-Net</a></h1>
+<div class="level1">
+
+<p>
+
+L'approche Art-Net, est l'approche la plus rapide en communication et elle n'est pas trop laborieuse pour les neurones.
+</p>
+
+<p>
+Vous utiliserez les scripts Art-Net fournis dans le dossier ressources de WhiteCat.
+</p>
+
+<p>
+
+De base, vous aurez besoin d'une carte arduino avec shield ethernet. Cet investissement fait dans les 100 euros.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduinowithethernetshield.jpg" class="media" title="arduinowithethernetshield.jpg"><img src="configuration_arduino_fichiers/fetch_029.jpg" class="media" title="arduinowithethernetshield.jpg" alt="arduinowithethernetshield.jpg" /></a>
+</p>
+
+<p>
+Les cartes arduino-ethernet ( la carte éthernet est intégrée, mais il 
+n'y a pas de connectique USB) coûtent quant à elles nettement moins cher
+ ( une cinquantaine d'euros la carte). Elles nécessitent un <strong>convertisseur USB-TTL</strong> pour programmer l'arduino depuis votre PC:
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino-uno-ethernet.jpg" class="media" title="arduino-uno-ethernet.jpg"><img src="configuration_arduino_fichiers/fetch_002.jpg" class="media" title="arduino-uno-ethernet.jpg" alt="arduino-uno-ethernet.jpg" /></a>  <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=convertisseur-usb-serie-pour-arduino.jpg" class="media" title="convertisseur-usb-serie-pour-arduino.jpg"><img src="configuration_arduino_fichiers/fetch_013.jpg" class="media" title="convertisseur-usb-serie-pour-arduino.jpg" alt="convertisseur-usb-serie-pour-arduino.jpg" /></a>
+</p>
+
+<p>
+Un Shield wifi permet de mettre votre arduino sur un réseau wifi, et donc de travailler sans fil:
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino-shield_wifi.jpg" class="media" title="arduino-shield_wifi.jpg"><img src="configuration_arduino_fichiers/fetch_015.jpg" class="media" title="arduino-shield_wifi.jpg" alt="arduino-shield_wifi.jpg" /></a>
+</p>
+
+</div>
+
+<h4><a name="artnet_sender_permet_d_emettre_une_trame_art-net_depuis_l_arduino" id="artnet_sender_permet_d_emettre_une_trame_art-net_depuis_l_arduino">Artnet sender permet d'émettre une trame Art-Net depuis l'arduino:</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A vous de lire les entrées 
+analogiques, les boutons dans le script  Art-Net  et d'écrire sur les 
+bons circuits de la trame dmx. Il faut donc un petit peu travailler sur 
+le script dans le logiciel arduino pour qu'il réponde à vos besoins.</div>
+</li>
+<li class="level1"><div class="li"> Vous recevrez le dmx dans un fader de WhiteCat.</div>
+</li>
+<li class="level1"><div class="li"> Soit vous vous servez du data pur, 
+soit vous utilisez les Channel Macros pour déclencher et piloter des 
+évènements fonction des états des circuits ( mode Follow, Bang, etc)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="artnet_receiver_permet_de_recevoir_une_trame_artnet_emise_par_whitecat" id="artnet_receiver_permet_de_recevoir_une_trame_artnet_emise_par_whitecat">Artnet receiver permet de recevoir une trame artnet émise par WhiteCat:</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A vous, dans le script arduino, d'associer des circuits aux sorties PWM, ou aux sorties ON/Off.</div>
+</li>
+<li class="level1"><div class="li"> Ce script permet une mise en oeuvre extrêmement rapide d'électronique pilotée en Art-Net ( relais, moteurs, leds, etc…)</div>
+</li>
+</ul>
+
+<p>
+<strong>Tous ces scripts fonctionnent sous logiciel arduino 023.</strong> 
+</p>
+
+</div>
+
+<h4><a name="utiliser_une_interface_arduino_pour_generer_du_dmx" id="utiliser_une_interface_arduino_pour_generer_du_dmx">Utiliser une interface Arduino pour générer du DMX</a></h4>
+<div class="level4">
+
+<p>
+A noter que Toni Merino s'est basé sur ces scripts pour développer un projet <a href="http://www.deskontrol.net/blog/arduino-based-dmx-artnet-node/" class="urlextern" title="http://www.deskontrol.net/blog/arduino-based-dmx-artnet-node/" rel="nofollow">MegaArduino générant du DMX</a>: la Mega reçoit par éthernet du data Art-Net et génère un DMX. Il s'est inspiré des schémas open source de l'enttec OPEN DMX.
+</p>
+
+</div>
+
+<h1><a name="l_approche_whittekitten" id="l_approche_whittekitten">L'approche Whittekitten</a></h1>
+<div class="level1">
+
+<p>
+Si votre arduino est destinée à être en régie, ou que vous avez choisi 
+de travailler avec les JeeNode, vous serez dans la configuration USB.
+</p>
+
+<p>
+C'est la solution la plus économique.
+</p>
+
+<p>
+L'échange de données va se faire par le cable USB, en mode port série. Et la communication avec WhiteCat est bidirectionnelle.
+</p>
+
+<p>
+La page Arduino CFG dans WhiteCat est donc dédiée à cet usage: l'utilisation d'une arduino sur USB.
+</p>
+
+<p>
+La communication entre WhiteCat et Arduino se passe donc de plusieurs manières:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Arduino pilote des fonctions dans WhiteCat ( comportement boite à boutons: entrées boutons poussoirs et potentiomètres )</div>
+</li>
+<li class="level1"><div class="li"> WhiteCat pilote les ports digitaux d'Arduino ( déclenchements On/OFF des I/O, graduation des PWM  )</div>
+</li>
+</ul>
+
+<p>
+
+<strong>Comme il y a plusieurs modèles de plateformes Arduino (  
+classique, mega, pro, mini, et autres arduino compatibles) il faut 
+paramétrer dans WhiteCat les ports d'entrée et sorties, leur 
+comportement, ainsi que l'utilisation que vous en faites. Ce paramétrage
+ est fait aussi dans le script que vous uploadez dans Arduino.</strong> 
+</p>
+
+<p>
+Whittekitten, l'arduino du chaton, est l'approche en usb la plus simple,
+ pour toute les personnes qui rêvent de développer des projet 
+éléctronique sans avoir à écrire une ligne de code. Il s'agit d'une 
+nouvelle version de Whitecat et d'une série de sketch que vous trouverez
+ dans le dossier whitecat/ressources/arduino/WhitteKitten. 
+</p>
+
+</div>
+
+<h4><a name="comment_ca_fonctionne1" id="comment_ca_fonctionne1">Comment ça fonctionne?</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="chargement_d_un_sketch" id="chargement_d_un_sketch">chargement d'un sketch</a></h5>
+<div class="level5">
+
+<p>
+
+Dans le dossier arduino/ressources/whittekitten vous trouverez plusieurs sketch que vous pouvez uploader selon vos besoins:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> le sketch 
+arduino_whitekitten_PWM_022 est le skecth par default pour une 
+Duemilanove ou une Uno. Il permet d'affecter n'importe quel pin en PWM y
+ compris les entrées analogique (A0-A5, 14-19) en sortie PWM (gradué).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> le sketch 
+arduino_whitekitten_SERVO_022 permet d'utiliser des servomoteurs 
+directement depuis l'arduino en le connectant sur une des pins. Si vous 
+utiliser ce sketch et que vous désirez aussi brancher des leds ou projos
+ gradués, seuls les pins qui peuvent par défaut être en pwm sur votre 
+carte arduino pourront être utilisé comme tel. C'est une incompatibilité
+ entre la librairie SoftPwm et la librairie Servo, qui, détail 
+technique, utilise toute les deux le timer 2 de la carte.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="dans_whitecat" id="dans_whitecat">Dans whitecat</a></h5>
+<div class="level5">
+
+<p>
+Au lancement de Whitecat, si votre arduino est branchée, il est possible
+ que whitecat freeze. C'est du au conflit de drivers qui existe entre 
+les cartes Entec et l'arduino. Débrancher et rebrancher votre Arduino ou
+ jeelink et c'est bon.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Configurer whitecat dans le menu/config-Menu/arduino cfg</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Le Baud-rate doit être à 14400. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> selectionner votre port COM.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Les valeurs par défaut pour une Duemilanove sont Last IO = 54, Last ANALOG 5, DIGITAL 13</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Creer votre configuration d'entrées sortie dans Whitekat.</div>
+</li>
+</ul>
+
+<p>
+Chaque digital correspond à un numéro de pin sur l'arduino. Vous pouvez 
+selectionner INPUT, PULLUP, OUTPUT, PWM, SERVO ou HF OUT.
+</p>
+<ul>
+<li class="level1"><div class="li"> Pour les entrées analogique. Si on 
+veut les utiliser en tant qu'entrées analogiques il faut, dans Whitecat 
+laisser les pins 14 à 19(Si Digital==13 les pins analogique sont de 14 à
+ 19) en position unaffected (-). Si aucun type n'est affecté à ces pins,
+ l'on retrouvera leurs valeurs dans les analog affectation.</div>
+</li>
+</ul>
+
+<p>
+On peut aussi utilser ces pins en PWM output ou digital in en affectant un autre type dans Whitecat.
+</p>
+<ul>
+<li class="level1"><div class="li"> une fois la configuration des pins de l'Arduino effectuée, Cliquer sur open is On</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Cliquer sur Send Config</div>
+</li>
+</ul>
+
+<p>
+
+Vous pouvez utiliser votre module arduino.
+Il est vivement conseiller à chaque démarrage de Whitecat et de 
+l'arduino, à la mise, de vérifier que le port COM est allumé et de 
+cliquer sur Send config.
+</p>
+
+</div>
+
+<h1><a name="l_approche_usb_traditionelle" id="l_approche_usb_traditionelle">L'approche USB traditionelle</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="comprehension_du_sketch" id="comprehension_du_sketch">Compréhension du sketch</a></h2>
+<div class="level2">
+
+<p>
+
+Cette partie demande un tout petit peu de patience, pour comprendre l'outil que vous utilisez.
+</p>
+
+<p>
+Un sketch est donc un programme, écrit en C ( avec quelques subtilités arduino).
+</p>
+
+<p>
+Il fonctionne avec deux fonctions principales: la fonction setup() et la fonction loop().
+</p>
+
+<p>
+La fonction setup() permet d'initialiser le comportement in/out du 
+hardware ( est ce que mes pins IO sont des inputs ou des outputs).
+</p>
+
+<p>
+La fonction loop est l'instruction qui tourne continuellement tant que 
+l'arduino est connectée. C'est le corps du programme, où sont appelées 
+les fonctions principales..
+</p>
+
+</div>
+
+<h4><a name="qu_est_ce_qu_une_fonction" id="qu_est_ce_qu_une_fonction">Qu'est ce qu'une fonction ?</a></h4>
+<div class="level4">
+
+<p>
+
+Une fonction est un ensemble d'instructions entre accolades déclarée ainsi
+</p>
+
+<p>
+void mafonction()
+</p>
+
+<p>
+ACCOLADE
+</p>
+
+<p>
+…
+</p>
+
+<p>
+ACCOLADE
+</p>
+
+<p>
+
+Le système d'accolades permet d'ouvrir après le nom de la fonction les 
+instructions à prendre en compte, puis à la fermeture de l'accolade de 
+ne plus prendre en compte les instructions suivantes.
+Il s'agit d'une syntaxe. Si j'en fais part ici, c'est que la plus part 
+des bugs du débutant reposent sur des erreurs d'accolades mal placées. 
+ 
+A noter que lorsque votre curseur est sur la ligne d'une accolade, le 
+pendant de celle-ci est entouré.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_accolades.jpg" class="media" title="arduino_accolades.jpg"><img src="configuration_arduino_fichiers/fetch_014.jpg" class="media" title="arduino_accolades.jpg" alt="arduino_accolades.jpg" /></a>
+</p>
+
+<p>
+Se référer à la doc Arduino qui explique fort bien la syntaxe et les principaux corps d'instructions.
+</p>
+
+<p>
+Commentaires dans le code: le double slash  ou le slash etoile sont des 
+commentaires, qui ne sont pas pris pour des bouts de code. Celà permet 
+d'annoter sont sketch pour mieux y revenir plus tard. 
+</p>
+
+</div>
+
+<h4><a name="description_du_sketch_whitecat_to_arduino" id="description_du_sketch_whitecat_to_arduino">Description du sketch WhiteCat to arduino</a></h4>
+<div class="level4">
+
+<p>
+<strong>Le script se présente en 4 parties. Vous avez besoin d'intervenir dans les parties 1 et 2 uniquement.</strong>
+</p>
+
+</div>
+
+<h5><a name="partie_11" id="partie_11">Partie 1:</a></h5>
+<div class="level5">
+
+<p>
+
+<strong>La déclaration des bibliothèques nécessaires au fonctionnement du sketch  (#include &lt;Wstring.h&gt;) </strong>
+</p>
+
+<p>
+La déclaration des variables globales ( les données manipulées sur 
+l'ensemble du programme). C'est dans cette partie que vous aurez besoin 
+de paramétrer certaines valeurs fonction de votre carte Arduino.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_include_et_variables.jpg" class="media" title="arduino_include_et_variables.jpg"><img src="configuration_arduino_fichiers/fetch_004.jpg" class="media" title="arduino_include_et_variables.jpg" alt="arduino_include_et_variables.jpg" /></a>
+</p>
+
+</div>
+
+<h5><a name="partie_2" id="partie_2">Partie 2:</a></h5>
+<div class="level5">
+
+<p>
+
+<strong>La fonction setup qui comprend votre initialisation des entrées 
+et sorties. C'est là où vous allez avoir le plus à faire dans ce script.</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_setupfunc.jpg" class="media" title="arduino_setupfunc.jpg"><img src="configuration_arduino_fichiers/fetch_031.jpg" class="media" title="arduino_setupfunc.jpg" alt="arduino_setupfunc.jpg" /></a>
+</p>
+
+</div>
+
+<h5><a name="partie_3" id="partie_3">Partie 3:</a></h5>
+<div class="level5">
+
+<p>
+
+<strong>La fonction Loop, qui attend l'arrivée de données sur le port série et qui reventile vers la fonction read_order.</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_loopfunc.jpg" class="media" title="arduino_loopfunc.jpg"><img src="configuration_arduino_fichiers/fetch_008.jpg" class="media" title="arduino_loopfunc.jpg" alt="arduino_loopfunc.jpg" /></a>
+</p>
+
+</div>
+
+<h5><a name="partie_4" id="partie_4">Partie 4:</a></h5>
+<div class="level5">
+
+<p>
+
+<strong>Le corps des fonctions de whitecat_to_arduino:
+
+la fonction read_order() qui reventile fonction des mots clés trouvés vers d'autres fonctions:</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_readorder.jpg" class="media" title="arduino_readorder.jpg"><img src="configuration_arduino_fichiers/fetch_010.jpg" class="media" title="arduino_readorder.jpg" alt="arduino_readorder.jpg" /></a>
+</p>
+
+<p>
+<strong>les fonctions d'écriture sur les ports arduino : whitecat_to_dig() et whitecat_to_pwm()</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_write.jpg" class="media" title="arduino_write.jpg"><img src="configuration_arduino_fichiers/fetch_005.jpg" class="media" title="arduino_write.jpg" alt="arduino_write.jpg" /></a>
+</p>
+
+<p>
+<strong>les fonctions de lecture des ports arduino et d'envoi de data à WhiteCat: arduino_to_whitecat()</strong>
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_wcatfunc.jpg" class="media" title="arduino_wcatfunc.jpg"><img src="configuration_arduino_fichiers/fetch.jpg" class="media" title="arduino_wcatfunc.jpg" alt="arduino_wcatfunc.jpg" /></a>
+</p>
+
+</div>
+
+<h1><a name="solutions_sans_fil" id="solutions_sans_fil">Solutions sans fil</a></h1>
+<div class="level1">
+
+<p>
+
+On peut avoir besoin de dialogue entre whitecat et l'arduino <strong>sans fil</strong>, hors usb, hors ethernet. 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> La solution recommandée est les <strong>Jeenodes</strong> de <a href="http://jeelabs.com/" class="urlextern" title="http://jeelabs.com/" rel="nofollow">JeeLabs</a>, un compatible arduino, incorporant un RF12 (émission/réception radio). </div>
+</li>
+</ul>
+
+<p>
+
+Jacques Bouault et Anton Langhoff ont défriché cette solution technique 
+pour les Nuits Blanches à Paris ( 2011). Le matériel et la connexion 
+avec WhiteCat (extérieur, régie en public itinérante) se sont révélés 
+robustes et fiables. Les JeeNodes ont l'immense mérite d'être très 
+abordables. Il communique en radio fréquence sur les bandes 868 <acronym title="Megahertz">MHz</acronym> et 433 Mhz. Ces bandes sont réservés pour les système d'alarme et ne présente que très peu de parasite.
+</p>
+
+<p>
+Un JeeLink branché à votre ordinateur sera reconnu comme une arduino par WhiteCat. Il sert d'émetteur.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=jeelink.jpg" class="media" title="jeelink.jpg"><img src="configuration_arduino_fichiers/fetch_032.jpg" class="media" title="jeelink.jpg" alt="jeelink.jpg" /></a>
+</p>
+
+<p>
+Vous pouvez aussi utiliser un  jeenode + USB BUB mais l'avantage du JeeLink est d'être déjà protégé par une enveloppe plastique.
+</p>
+
+<p>
+
+Un ou plusieurs JeeNodes recevront les données et les écriront sur leurs ports ( 4 digitaux/4 PWM, ou 8 PWM ).
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=jeenode.jpg" class="media" title="jeenode.jpg"><img src="configuration_arduino_fichiers/fetch_028.jpg" class="media" title="jeenode.jpg" alt="jeenode.jpg" /></a>
+</p>
+
+<p>
+L'USB-BUB est utile pour accéder à l'ATMEGA du JeeNode et y charger 
+simplement les sketchs. Il permet de brancher le JeeNode sur le PC. 
+Sinon il faut démonter l'ATMEGA, le mettre dans une ARDUINO, le charger 
+avec le sketch, puis le remmettre dans le JeeNode. 
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=usb_bub.jpg" class="media" title="usb_bub.jpg"><img src="configuration_arduino_fichiers/fetch_034.jpg" class="media" title="usb_bub.jpg" alt="usb_bub.jpg" /></a>
+</p>
+
+<p>
+Dans le dossier ressources/arduino de WhiteCat vous trouverez des 
+scripts à charger dans l'émetteur ( JeeLink) et les récepteurs ( 
+JeeNodes), permettant soit de recevoir des données sans modifier le 
+script, soit d'écrire  des données sur le jeenode ( pilotage de gradas 
+servos et autres relais).
+</p>
+
+<p>
+Le plus simple reste d'utiliser dans le dossier whitekitten le sketch 
+arduino_whitekitten_RF12_PWM_022.pde et de le charger dans un jeelink, 
+un jeenode ou une arduino avec une carte RF12 qui sera branché en usb à 
+l'ordi et servira d'émetteur. 
+</p>
+
+<p>
+Puis de charger dans un plusieurs jeenode recepteur soit le sketch 
+recepteur_jeenode_PWM.pde, soit le sketch recepteur_jeenode_servo.pde
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=recepteur_jeenode.jpg" class="media" title="recepteur_jeenode.jpg"><img src="configuration_arduino_fichiers/fetch_021.jpg" class="media" title="recepteur_jeenode.jpg" alt="recepteur_jeenode.jpg" /></a>
+Dans le void loop, on trouve les fonction SoftPWMSet  (4, rf12_data[2]);
+ 
+Ce sont les fonction d'écriture de l'arduino (on peut bien sur faire un 
+digitalWrite ou n'importe quelle autre fonction de l'arduino <img src="configuration_arduino_fichiers/icon_smile.gif" class="middle" alt=":-)" />. 
+</p>
+
+<p>
+4 étant la sortie D du port 1 d'un jeenode. Le jeenode n'a pas le même 
+système de nom de pin.
+Sur un jeenode, on trouve 4 port de 6 pins chacun avec alimentation 
+principale P, Gnd, + 3,3V, D pour digital, A analogique, I qui est une 
+pin spécifique commune à tout les ports.
+La correspondance avec l'arduino est:
+Jeenode port 1 à 4 sortie D = pins 4 à 7 de l'arduino.
+Jeenode port 1 à 4 entré A = pins 14 à 17 (ou A0 à A3) de l'arduino.
+</p>
+
+<p>
+ rf12_data[2] est la valeur reçus sur le canal 2 envoyé par Whitecat.
+Par defaut donc si dans Whitecat la pin 2 est en type HF out ce sketch 
+écrira sur la sortie 4 du jeenode récepteur la valeur en PWM envoyé 
+depuis Whitecat.
+</p>
+
+<p>
+
+A noter:
+</p>
+<ul>
+<li class="level1"><div class="li"> les shields Xbee, qui permettent 
+d'équiper deux arduinos et de ne pas modifier de code, mais beaucoup 
+plus chers que des Jeenodes</div>
+</li>
+<li class="level1"><div class="li"> les solutions shields wifi pour mettre l'arduino sur le reseau</div>
+</li>
+</ul>
+
+</div>
+
+<h1><a name="schemas_basiques_et_premiers_pas" id="schemas_basiques_et_premiers_pas">Schémas basiques et premiers pas</a></h1>
+<div class="level1">
+
+<p>
+
+Le site <a href="http://www.arduino.cc/" class="urlextern" title="http://www.arduino.cc" rel="nofollow">www.arduino.cc</a> est très bien fait et comporte de multiples exemples. Passez par les sections Learning et Playground.
+Ci joint quelques images issues du site. Les graphismes ont été générés par Fritzing.
+</p>
+
+<p>
+Les premiers pas sous Arduino, avant de se lancer dans un projet 
+complexe, se font généralement avec quelques LEDs, potentiomètres, 
+boutons et résistances.
+Celà permet de tester la communication avec WhiteCat, et d'envisager 
+pleinement le potentiel d'Arduino.
+</p>
+
+</div>
+
+<h5><a name="entreeinterrupteur_sur_entree_on_off" id="entreeinterrupteur_sur_entree_on_off">Entrée: Interrupteur sur entrée ON/OFF</a></h5>
+<div class="level5">
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=button_sch.png" class="media" title="button_sch.png"><img src="configuration_arduino_fichiers/fetch_006.png" class="media" alt="" /></a> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=button_bb.png" class="media" title="button_bb.png"><img src="configuration_arduino_fichiers/fetch_003.png" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h5><a name="entreepotentiometre_sur_entree_analogique" id="entreepotentiometre_sur_entree_analogique">Entrée: Potentiomètre sur entrée analogique</a></h5>
+<div class="level5">
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=analog_read.png" class="media" title="analog_read.png"><img src="configuration_arduino_fichiers/fetch.png" class="media" alt="" /></a> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=analog_read_bb.png" class="media" title="analog_read_bb.png"><img src="configuration_arduino_fichiers/fetch_005.png" class="media" alt="" /></a>
+</p>
+
+<p>
+Ammortissement électronique des variations du capteur ( varier les résistances et condensateur jusqu'à obtenir un signal propre)
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=arduino_potard_condensateur_schem.jpg" class="media" title="arduino_potard_condensateur_schem.jpg"><img src="configuration_arduino_fichiers/fetch_023.jpg" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h5><a name="entreecapteur_de_distance_ir" id="entreecapteur_de_distance_ir">Entrée: capteur de distance IR</a></h5>
+<div class="level5">
+
+<p>
+
+Varier sa lumière sans être affecté par l'éclairage ambiant
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=capteur_ir.jpg" class="media" title="capteur_ir.jpg"><img src="configuration_arduino_fichiers/fetch_012.jpg" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h5><a name="sortie_on_off_led" id="sortie_on_off_led">Sortie ON/OFF : LED</a></h5>
+<div class="level5">
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=on_off_led.png" class="media" title="on_off_led.png"><img src="configuration_arduino_fichiers/fetch_002.png" class="media" alt="" /></a> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=on_off_led_bb.png" class="media" title="on_off_led_bb.png"><img src="configuration_arduino_fichiers/fetch_008.png" class="media" alt="" /></a> 
+</p>
+
+</div>
+
+<h5><a name="sortie_pwm_montage_d_une_led_dimmable" id="sortie_pwm_montage_d_une_led_dimmable">Sortie PWM Montage d'une LED (dimmable)</a></h5>
+<div class="level5">
+
+<p>
+
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=fade_led.png" class="media" title="fade_led.png"><img src="configuration_arduino_fichiers/fetch_007.png" class="media" alt="" /></a> <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=fade_led_bb.png" class="media" title="fade_led_bb.png"><img src="configuration_arduino_fichiers/fetch_004.png" class="media" alt="" /></a>
+</p>
+
+</div>
+
+<h5><a name="gradateur_12v_sur_jeenode" id="gradateur_12v_sur_jeenode">Gradateur 12v sur Jeenode</a></h5>
+<div class="level5">
+
+<p>
+
+Montage et recherche Jacques Bouault.
+</p>
+
+<p>
+<a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/lib/exe/detail.php?id=configuration_arduino&amp;media=jeenode_mini_grada_12v.jpg" class="media" title="jeenode_mini_grada_12v.jpg"><img src="configuration_arduino_fichiers/fetch_025.jpg" class="media" title="jeenode_mini_grada_12v.jpg" alt="jeenode_mini_grada_12v.jpg" /></a>
+</p>
+
+</div>
+
+<h2><a name="shopping_arduino" id="shopping_arduino">Shopping &amp; Arduino</a></h2>
+<div class="level2">
+
+<p>
+
+Voici quelques liens intéressants, vers des revendeurs de kits arduino (
+ option économique si vous désirez expérimenter cette carte) et de 
+bidouilles électroniques qui peuvent nous intéresser en spectacle 
+vivant.
+Sur Paris, Saint Quentin Radio est une bonne adresse, et de très bon 
+conseil.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Lextronic, distributeur français, propose un starter kit étoffé ( carte arduino, relais, servos, driver) <a href="http://www.lextronic.fr/produit.php?id=19085" class="urlextern" title="http://www.lextronic.fr/produit.php?id=19085" rel="nofollow">http://www.lextronic.fr/produit.php?id=19085</a>. A noter que vous trouverez sur leur site des potentiomètres adhésifs.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fritzing, un projet logiciel libre 
+permettant d'éditer des PCB et plans de montages électroniques, offre un
+ starter kit intéressant. <a href="http://fritzing.org/shop/starter-kit/" class="urlextern" title="http://fritzing.org/shop/starter-kit/" rel="nofollow">http://fritzing.org/shop/starter-kit/</a>. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> CoolComponents, un site anglais, 
+propose (entre autres) un adaptateur pour brancher facilement un 
+Wii-Nunchuk sur Arduino, des sets de boutons rétro-éclairables ( dalles 
+de 2×2 ou 4×4), ainsi que la gamme LilyPad: une carte compatible Arduino
+ brodable dans les costumes, et …. lavable ! <a href="http://www.coolcomponents.co.uk/catalog/" class="urlextern" title="http://www.coolcomponents.co.uk/catalog/" rel="nofollow">http://www.coolcomponents.co.uk/catalog/</a> On peut y trouver le screw-shield ( un adaptateur qui permet de serrer dans des dominos vos fils).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Sparkfun est un éditeur américain de
+ composants innovants. Certains de leurs produits sont trouvables sur 
+les sites pré-cités. Mais il est toujours intéressant d'y faire un tour:
+ <a href="http://www.sparkfun.com/" class="urlextern" title="http://www.sparkfun.com" rel="nofollow">http://www.sparkfun.com</a></div>
+</li>
+</ul>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <div class="doc">
+        configuration_arduino.txt · Dernière modification: 2012/06/22 09:17 par christoph      </div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <form class="button btn_source" method="post" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="edit" type="hidden" /><input name="rev" value="" type="hidden" /><input name="id" value="configuration_arduino" type="hidden" /><input value="Afficher le texte source" class="button" accesskey="v" title="Afficher le texte source [V]" type="submit" /></div></form>        <form class="button btn_revs" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="revisions" type="hidden" /><input name="id" value="configuration_arduino" type="hidden" /><input value="Anciennes révisions" class="button" accesskey="o" title="Anciennes révisions [O]" type="submit" /></div></form>      </div>
+      <div class="bar-right" id="bar__bottomright">
+                                        <form class="button btn_login" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="login" type="hidden" /><input name="sectok" value="1ca3f7797df1c4c436ada6279f6a7330" type="hidden" /><input name="id" value="configuration_arduino" type="hidden" /><input value="Connexion" class="button" title="Connexion" type="submit" /></div></form>        <form class="button btn_index" method="get" action="/whitecat/dokuwiki/doku.php"><div class="no"><input name="do" value="index" type="hidden" /><input name="id" value="configuration_arduino" type="hidden" /><input value="Index" class="button" accesskey="x" title="Index [X]" type="submit" /></div></form>        <a class="nolink" href="#dokuwiki__top"><input class="button" value="Haut de page" onclick="window.scrollTo(0, 0)" title="Haut de page" type="button" /></a>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+  <div class="license">Sauf mention contraire, le contenu de ce wiki est placé sous la licence suivante:<a href="http://www.gnu.org/licenses/fdl-1.2.html" rel="license" class="urlextern">GNU Free Documentation License 1.2</a></div>
+</div>
+
+<div class="footerinc">
+
+  <a href="http://www.le-chat-noir-numerique.fr/whitecat/dokuwiki/feed.php" title="Recent changes RSS feed"><img src="configuration_arduino_fichiers/button-rss.png" alt="Recent changes RSS feed" height="15" width="80" /></a>
+
+        <a href="http://www.gnu.org/licenses/fdl-1.2.html" rel="license" title="GNU Free Documentation License 1.2"><img src="configuration_arduino_fichiers/gnufdl.png" alt="" height="15" width="80" /></a>
+  
+  <a href="http://www.dokuwiki.org/donate" title="Donate"><img src="configuration_arduino_fichiers/button-donate.gif" alt="Donate" height="15" width="80" /></a>
+
+  <a href="http://www.php.net/" title="Powered by PHP"><img src="configuration_arduino_fichiers/button-php.gif" alt="Powered by PHP" height="15" width="80" /></a>
+
+  <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="configuration_arduino_fichiers/button-xhtml.png" alt="Valid XHTML 1.0" height="15" width="80" /></a>
+
+  <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="configuration_arduino_fichiers/button-css.png" alt="Valid CSS" height="15" width="80" /></a>
+
+  <a href="http://dokuwiki.org/" title="Driven by DokuWiki"><img src="configuration_arduino_fichiers/button-dw.png" alt="Driven by DokuWiki" height="15" width="80" /></a>
+
+
+
+</div>
+
+<div class="no"><img src="configuration_arduino_fichiers/indexer.gif" alt="" height="1" width="1" /></div>
+
+
+
+
+</body></html>
