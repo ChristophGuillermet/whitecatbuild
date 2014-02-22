@@ -9,4 +9,4 @@
 #arguments: X Y position of windows: Wizard window/ Minifaders / List / Chasers
 100 200 / 600 200 / 300 200 / 100 200 / 100 200 /
 #arguments: X Y position of windows: iCatBuilder / Grider / Plot / Main Menu / Draw / Echo /
-300 200 / 200 200 / 100 100 / 211 113 / 100 100 / 100 100 /
+300 200 / 200 200 / 100 100 / 438 566 / 100 100 / 100 100 /

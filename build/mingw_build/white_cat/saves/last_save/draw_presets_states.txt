@@ -2,7 +2,7 @@
 #arguments Preset 1:MODE (0 to 3) / LEVEL (float) / TILT (float)/ SIZE (float)/ GHOST (float) / BRUSH TYPE (int) /
 #arguments 2ndLine :GPL NUM ( 1 to 4 ) / Offset ( 1 to 513 ) / position point / col / row /
 M 0 / 0.100000 / 0.100000 / 0.010000 / 1 /
-G 4 / 1 / 0 / 0 / 0 /
+G 4 / 1 / 7 / 1 / 1 /
 #arguments Preset 2:MODE (0 to 3) / LEVEL (float) / TILT (float)/ SIZE (float)/ GHOST (float) / BRUSH TYPE (int) /
 #arguments 2ndLine :GPL NUM ( 1 to 4 ) / Offset ( 1 to 513 ) / position point / col / row /
 M 0 / 0.100000 / 0.100000 / 0.010000 / 0 /
