@@ -1,0 +1,4 @@
+#arguments: mem_on_stage*10 / mem_on_preset*10 / master_stage / master_preset / speed /
+10 / 10 / 255 / 0 / 64 /
+5.0 /
+0 0 /
