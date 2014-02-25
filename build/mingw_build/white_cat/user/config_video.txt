@@ -1,6 +1,0 @@
-#arguments: size of image X size of image Y - Video Rate
-352 288 17
-#arguments: (0-1)flip threshold erode blur (Level) thresh erode div
-0 1 0 1 26 1 0
-#arguments: preset ocv_mode
-0 1

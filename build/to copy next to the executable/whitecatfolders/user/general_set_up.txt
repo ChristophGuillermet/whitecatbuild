@@ -1,4 +1,0 @@
-#arguments: default step level / level wheel absolute mode / channel check level / dimmer check level / blink on mem change /  midi auto desaffect / dmx view / preloaded sounds / bang stay time
-1 / 1 / 255 / 192 / 0 / 1 / 0 / 1 / 1.0 /
-#arguments: autosave time in sec / nbr audioplayers / fader space width /
-10 / 2 / 1200 /

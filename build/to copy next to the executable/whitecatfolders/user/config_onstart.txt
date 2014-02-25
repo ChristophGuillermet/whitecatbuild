@@ -1,2 +1,0 @@
-#arguments:values 0-1: open camera / open arduino / open iCat server / expert_mode /
-0 / 0 / 0 / 0 /

@@ -1,4 +1,0 @@
-#arguments: broadcast (1) ou unicast (0) // puis Univers Dmx surlequel envoyer ( 0 à 15)
-1 0
-#arguments: si en broadcast: l'adresse doit etre de type X.X.X. / si en unicast X.X.X.X
-192.168.1.

@@ -1,6 +1,0 @@
-#arguments: nb_faders / nb_docks / nb_chasers/ nb_tracks per chasers / nb_gridplayers / nb_bangers /
-48 / 6 / 127 / 24 / 4 / 127 / 23 /
-#arguments: do faders (0-1) /do cuelist (0-1) / do bangers (0-1)/ do trichro (0-1) / do videotracking (0-1) / do chasers (0/1) / do Grid (0-1) /
-1 / 1 / 1 / 1 / 1 / 1 / 1 / 1 / 1 /
-#arguments: BPS RATE (25-200, should be 50) / DMX IN RATE (25-50) / 
-50 / 25 / 10 /

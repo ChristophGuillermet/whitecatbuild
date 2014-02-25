@@ -1,2 +1,0 @@
-#arguments: orange / green / yellow / red  / ambre / dark orange /
-63 / 60  / 62 / 15 / 31 / 30 /

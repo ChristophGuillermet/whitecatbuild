@@ -1,6 +1,0 @@
-#arguments: Name_of_the_plan.jpg
-jacques_brel_ramdam.jpg
-#arguments: position X / position Y / size X / size Y / Orientation / Alpha / Lock proportions / Global Library Size /
-330 / 150 / 1082 / 823 / 0.000000 / 0.000000 / 1 / 0.520000 /
-#arguments: Grid Scale / Plot Window size X / Plot Window size X / Plot Viewport X / Plot Viewport Y / Line Color / Background Color / Number of shapes present / Show shapes id / Grid Type / Alpha Grid / Alpha Shapes / Plan ratio / SoloMode xy relativs /
-50 / 1210 / 750 / 89 / -624 / 0.000000 / 1.160000 / 22 / 0 / 1 / 0.000000 / 1.000000 / 1.314702 / 1 /

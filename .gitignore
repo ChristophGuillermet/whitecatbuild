@@ -1,4 +1,59 @@
-# Compiled Object files
-*.slo
-*.lo
+#name folders to ignore
+audio/
+doc/
+fonts/
+gfx/
+import_export/
+obj/
+plans/
+ressources/
+saves/
+user/
+utils/
+
+#untracked name files
+allegro.cfg
+colormap.exe
+dat.exe
+dat2c.exe
+dat2s.exe
+exedat.exe
+gmon.out
+grabber.exe
+libpng12-config
+libpng-config
+opencv_createsamples.exe
+opencv_haartraining.exe
+opencv_performance.exe
+opencv_traincascade.exe
+pack.exe
+pat2dat.exe
+rgbmap.exe
+textconv.exe
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
 *.o
+*.so
+*.ini
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
